@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: #f4f2f2;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* NavBar */
+/* SideBar */
+.sidebar {
+  width: 6.5rem;
+  height: 100%;
+  background-color: #eee;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.menu-icons {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.line {
+  width: 2.2rem;
+  height: .2rem;
+  background-color: #555;
+  margin-bottom: .6rem;
+}
+
+.line1,
+.line3 {
+  width: 1.8rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.menu-icons:hover .line {
+  width: 2.2rem;
+}
+
+.social-icons-list {
+  list-style: none;
+  padding: 0;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-link {
+  font-size: 1.95rem;
+  color: #777;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.social-link:hover {
+  color: #deaa86;
+}
+
+.year {
+  letter-spacing: .18rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #666;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.year:hover {
+  color: #2FAF79;
+}
+
+/* End of SideBar */
+/* Navigation */
+.navigation {
+  position: fixed;
+  left: -23.5rem;
+  width: 30rem;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#202229), to(rgba(32, 34, 41, 0.5))), url(../img/nav-bg.jpeg) center no-repeat;
+  background: linear-gradient(to top, #202229, rgba(32, 34, 41, 0.5)), url(../img/nav-bg.jpeg) center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+  -webkit-transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  color: #deaa86;
+  text-align: center;
+}
+
+.navigation-search {
+  position: relative;
+}
+
+.navigation-search-input {
+  width: 20rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #deaa86;
+  letter-spacing: .1rem;
+  outline: none;
+  border: .1rem solid #555;
+  border-radius: 10rem;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.navigation-search-input:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-search-btn {
+  border: none;
+  background-color: transparent;
+  color: #deaa86;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.navigation-search-btn:focus {
+  outline: none;
+}
+
+.navigation-items {
+  position: relative;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  height: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-links {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.navigation-links::before {
+  content: "";
+  width: 0rem;
+  height: .1rem;
+  background-color: #deaa86;
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  -webkit-transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+  transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-links::after {
+  content: "";
+  width: 0rem;
+  height: .1rem;
+  background-color: #deaa86;
+  position: absolute;
+  top: 1rem;
+  right: -4rem;
+  -webkit-transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+  transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-links:hover {
+  color: #deaa86;
+}
+
+.navigation-links:hover::before,
+.navigation-links:hover::after {
+  width: 3rem;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox:checked ~ .navigation {
+  left: 6.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line1 {
+  -webkit-transform: rotate(-405deg) translate(-5px, 6px);
+          transform: rotate(-405deg) translate(-5px, 6px);
+  width: 2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .line3 {
+  -webkit-transform: rotate(405deg) translate(-5px, -6px);
+          transform: rotate(405deg) translate(-5px, -6px);
+  width: 2.5rem;
+}
+
+/* End Of Navigation */
+/* End of NavBar */
+/*# sourceMappingURL=main.css.map */
