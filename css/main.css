@@ -113,8 +113,8 @@ body {
   left: -23rem;
   width: 25rem;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#202229), to(rgba(32, 34, 41, 0.6))), url(../assets/nav-bg2.jpg) center no-repeat;
-  background: linear-gradient(to top, #202229, rgba(32, 34, 41, 0.6)), url(../assets/nav-bg2.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(#202229), to(rgba(32, 34, 41, 0.6))), url(../assets/nav-bg.jpg) center no-repeat;
+  background: linear-gradient(to top, #202229, rgba(32, 34, 41, 0.6)), url(../assets/nav-bg.jpg) center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
