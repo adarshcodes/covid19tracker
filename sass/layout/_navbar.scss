@@ -84,7 +84,7 @@
     z-index: 5;
     transition: left .8s cubic-bezier(1, 0, 0, 1);
     padding-top: 3rem;
-    box-shadow: 0.5rem 1rem 2rem rgba(#000, .2);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
 
     &__heading a{
         font-family: 'Josefin Sans', sans-serif;

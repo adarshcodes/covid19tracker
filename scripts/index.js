@@ -19,7 +19,8 @@ hamMenu.addEventListener('click', function () {
 
 
 // Typing Effect? //
-// import Typewriter from 'typewriter-effect/dist/core';
+
+// Primary Heading Effect // 
 
 let typeMain = document.getElementById('type-main');
 let typeSub = document.getElementById('type-sub');

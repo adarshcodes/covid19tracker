@@ -117,11 +117,6 @@
                     <span class="heading-primary__main" id="type-main">Coronavirus</span><br>
                     <span class="heading-primary__sub" id="type-sub">Live Tracker</span>
                 </h1>
-
-                <!-- <p class="para-primary">The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, Chine in December
-                    2019, the outbreak was later recognized as a global pandemic by the World Health Organization(WHO)
-                    on 11
-                    March 2020.</p> -->
             </div>
         </header>
 
@@ -132,50 +127,114 @@
         <main>
             <section class="section-stats" id="stats-section">
 
+                <!-- stats cards global -->
+
                 <div class="global-stats">
                     <div class="u-center-text u-margin-bottom-big">
                         <h2 class="heading-secondary">
-                            Global Statistics <sup>Live&#x2764;</sup>
+                            Global Statistics <sup>Live <sup>&#x2764;</sup></sup>
                         </h2>
                     </div>
-
                     <div class="stats-cards">
                         <!-- <div class="stats-cards__cards stats-cards__tests-card">
 
                         </div> -->
                         <div class="stats-cards__cards stats-cards__confirmed-card u-center-text">
                             <h5 class="card-heading heading-confirmed">Confirmed</h5>
-                            <h1 id="confirmed" class="card-data data-confirmed">88,74,226</h1>
-                            <h4 id="confirmed-new" class="card-data-new new-confirmed">+28,609</h4>
+                            <h1 id="global-confirmed" class="card-data data-confirmed">88,74,226</h1>
+                            <h4 id="global-confirmed-new" class="card-data-new new-confirmed">+28,609</h4>
                         </div>
 
                         <div class="stats-cards__cards stats-cards__recovered-card u-center-text">
                             <h5 class="card-heading heading-recovered">Recovered</h5>
-                            <h1 id="recovered" class="card-data data-recovered">88,74,226</h1>
-                            <h4 id="recovered-new" class="card-data-new new-recovered">+28,609</h4>
+                            <h1 id="global-recovered" class="card-data data-recovered">88,74,226</h1>
+                            <h4 id="global-recovered-new" class="card-data-new new-recovered">+28,609</h4>
                         </div>
 
                         <div class="stats-cards__cards stats-cards__active-card u-center-text">
                             <h5 class="card-heading heading-active">Active</h5>
-                            <h1 id="active" class="card-data data-active">88,74,226</h1>
-                            <h4 id="active-new" class="card-data-new new-active">&#x2764;</h4>
+                            <h1 id="global-active" class="card-data data-active">88,74,226</h1>
+                            <h4 id="global-active-new" class="card-data-new new-active">&#x2764;</h4>
                         </div>
 
                         <div class="stats-cards__cards stats-cards__deceased-card u-center-text">
                             <h5 class="card-heading heading-deceased">Deceased</h5>
-                            <h1 id="deceased" class="card-data data-deceased">88,74,226</h1>
-                            <h4 id="deceased-new" class="card-data-new new-deceased">+28,609</h4>
+                            <h1 id="global-deceased" class="card-data data-deceased">88,74,226</h1>
+                            <h4 id="global-deceased-new" class="card-data-new new-deceased">+28,609</h4>
                         </div>
 
                         <div class="stats-cards__cards stats-cards__critical-card u-center-text">
                             <h5 class="card-heading heading-critical">critical</h5>
-                            <h1 id="critical" class="card-data data-critical">88,74,226</h1>
-                            <h4 id="crtical-new" class="card-data-new new-critical">&#x2764;</h4>
+                            <h1 id="global-critical" class="card-data data-critical">88,74,226</h1>
+                            <h4 id="global-crtical-new" class="card-data-new new-critical">&#x2764;</h4>
                         </div>
                     </div>
                 </div>
 
+                <!--End of stats cards global -->
 
+                <!-- Search-Bar -->
+
+                <form class="search" action="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search__icon" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="search-bar" class="search__input" placeholder="Search Your Country">
+                </form>
+
+                <!-- End of Search Bar -->
+
+                <!-- Country-Stats -->
+
+                <div class="country-stats">
+                    <div class="u-center-text u-margin-bottom-big">
+                        <h2 class="heading-secondary">
+                            Country's Stats <sup>Live <sup>&#x2764;</sup></sup>
+                        </h2>
+                    </div>
+                    <div class="stats-cards">
+                        <div class="stats-cards__cards stats-cards__tests-card u-center-text">
+                            <h5 class="card-heading heading-test">Tests Done</h5>
+                            <h1 id="country-test" class="card-data data-test">88,74,226</h1>
+                            <h4 id="country-test-new" class="card-data-new new-test">&#x2764;</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__confirmed-card u-center-text">
+                            <h5 class="card-heading heading-confirmed">Confirmed</h5>
+                            <h1 id="country-confirmed" class="card-data data-confirmed">88,74,226</h1>
+                            <h4 id="country-confirmed-new" class="card-data-new new-confirmed">+28,609</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__recovered-card u-center-text">
+                            <h5 class="card-heading heading-recovered">Recovered</h5>
+                            <h1 id="country-recovered" class="card-data data-recovered">88,74,226</h1>
+                            <h4 id="country-recovered-new" class="card-data-new new-recovered">+28,609</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__active-card u-center-text">
+                            <h5 class="card-heading heading-active">Active</h5>
+                            <h1 id="country-active" class="card-data data-active">88,74,226</h1>
+                            <h4 id="country-active-new" class="card-data-new new-active">&#x2764;</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__deceased-card u-center-text">
+                            <h5 class="card-heading heading-deceased">Deceased</h5>
+                            <h1 id="country-deceased" class="card-data data-deceased">88,74,226</h1>
+                            <h4 id="country-deceased-new" class="card-data-new new-deceased">+28,609</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__critical-card u-center-text">
+                            <h5 class="card-heading heading-critical">critical</h5>
+                            <h1 id="country-critical" class="card-data data-critical">88,74,226</h1>
+                            <h4 id="country-crtical-new" class="card-data-new new-critical">&#x2764;</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of Country Stats -->
 
             </section>
 
