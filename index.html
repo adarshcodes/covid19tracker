@@ -13,16 +13,19 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3aff8df930.js" crossorigin="anonymous"></script>
 
+    <!-- Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <!-- Google-fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Josefin+Sans:wght@200;400&family=Montserrat:wght@200;400&family=Poppins:wght@200;300&family=Raleway:wght@200;400&family=Roboto:wght@300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;400;500;600&family=Raleway:wght@200;300;400;500;600&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- NavBar -->
+    <!-- Navigation -->
     <div class="navbar">
 
         <!-- SideBar -->
@@ -37,7 +40,7 @@
 
             <ul class="sidebar__list">
                 <li>
-                    <a href="#" class="sidebar__links" id="stats">
+                    <a href="#stats-section" class="sidebar__links" id="stats">
                         <i class="fas fa-chart-bar"></i>
                     </a>
                 </li>
@@ -55,7 +58,7 @@
                 </li>
                 <li>
                     <a href="#" class="sidebar__links" id="test">
-                        <i class="fas fa-vials"></i></a>
+                        <i class="fas fa-vial"></i></a>
                 </li>
             </ul>
 
@@ -65,38 +68,126 @@
         </div>
         <!-- End Of SideBar -->
 
-        <!-- Navigation -->
-             <nav class="navigation">
-              <div class="navigation__header">
-                  <h1 class="navigation__heading">n-Cov Tracker</h1>
-              </div>
+        <!-- Navbar -->
+        <nav class="navigation">
+            <div class="navigation__header">
+                <h1 class="navigation__heading"><a href="#header">n-Cov Tracker</a></h1>
+            </div>
 
-              <ul class="navigation__list">
-                  <li class="navigation__items">
-                      <a href="#" class="navigation__links stats">Statistics</a></li>
-                  <li class="navigation__items">
-                      <a href="#" class="navigation__links symptoms">Symptoms</a>
-                  </li>
-                  <li class="navigation__items">
-                      <a href="#" class="navigation__links prevention">Prevention</a>
-                  </li>
-                  <li class="navigation__items">
-                      <a href="#" class="navigation__links treatment">Treatment</a>
-                  </li>
-                  <li class="navigation__items">
-                      <a href="#" class="navigation__links test">Test Yourself</a>
-                  </li>
-              </ul>
+            <ul class="navigation__list">
+                <li class="navigation__items">
+                    <a href="#stats-section" class="navigation__links stats">Statistics</a></li>
+                <li class="navigation__items">
+                    <a href="#" class="navigation__links symptoms">Symptoms</a>
+                </li>
+                <li class="navigation__items">
+                    <a href="#" class="navigation__links prevention">Prevention</a>
+                </li>
+                <li class="navigation__items">
+                    <a href="#" class="navigation__links treatment">Treatment</a>
+                </li>
+                <li class="navigation__items">
+                    <a href="#" class="navigation__links test">Test Yourself</a>
+                </li>
+            </ul>
 
-              <div class="copyright">
-                  <p>n-Cov Tracker &copy; All Rights Reserved</p>
-              </div>
-          </nav>
+            <div class="copyright">
+                <p>n-Cov Tracker &copy; All Rights Reserved</p>
+            </div>
+        </nav>
 
-        <!-- End Of Navigation -->
+        <!-- End Of Navbar -->
     </div>
-    <!-- End of NavBar -->
+    <!-- End of Navigation -->
 
+
+    <!-- Main-Container -->
+
+    <div class="container">
+
+        <!-- Header-Section -->
+
+        <header class="header" id="header">
+            <div class="header__logo-box">
+                <!-- <img src="assets/logo-black.png" alt="Logo" class="header-logo"> -->
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary__main" id="type-main">Coronavirus</span><br>
+                    <span class="heading-primary__sub" id="type-sub">Live Tracker</span>
+                </h1>
+
+                <!-- <p class="para-primary">The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, Chine in December
+                    2019, the outbreak was later recognized as a global pandemic by the World Health Organization(WHO)
+                    on 11
+                    March 2020.</p> -->
+            </div>
+        </header>
+
+        <!-- End of Header-Section -->
+
+        <!-- Main-Section -->
+
+        <main>
+            <section class="section-stats" id="stats-section">
+
+                <div class="global-stats">
+                    <div class="u-center-text u-margin-bottom-big">
+                        <h2 class="heading-secondary">
+                            Global Statistics <sup>Live&#x2764;</sup>
+                        </h2>
+                    </div>
+
+                    <div class="stats-cards">
+                        <!-- <div class="stats-cards__cards stats-cards__tests-card">
+
+                        </div> -->
+                        <div class="stats-cards__cards stats-cards__confirmed-card u-center-text">
+                            <h5 class="card-heading heading-confirmed">Confirmed</h5>
+                            <h1 id="confirmed" class="card-data data-confirmed">88,74,226</h1>
+                            <h4 id="confirmed-new" class="card-data-new new-confirmed">+28,609</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__recovered-card u-center-text">
+                            <h5 class="card-heading heading-recovered">Recovered</h5>
+                            <h1 id="recovered" class="card-data data-recovered">88,74,226</h1>
+                            <h4 id="recovered-new" class="card-data-new new-recovered">+28,609</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__active-card u-center-text">
+                            <h5 class="card-heading heading-active">Active</h5>
+                            <h1 id="active" class="card-data data-active">88,74,226</h1>
+                            <h4 id="active-new" class="card-data-new new-active">&#x2764;</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__deceased-card u-center-text">
+                            <h5 class="card-heading heading-deceased">Deceased</h5>
+                            <h1 id="deceased" class="card-data data-deceased">88,74,226</h1>
+                            <h4 id="deceased-new" class="card-data-new new-deceased">+28,609</h4>
+                        </div>
+
+                        <div class="stats-cards__cards stats-cards__critical-card u-center-text">
+                            <h5 class="card-heading heading-critical">critical</h5>
+                            <h1 id="critical" class="card-data data-critical">88,74,226</h1>
+                            <h4 id="crtical-new" class="card-data-new new-critical">&#x2764;</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+            <!-- Stats-Section -->
+
+
+
+
+
+    </div>
+
+    <!-- End of Main-Container -->
 
 
 

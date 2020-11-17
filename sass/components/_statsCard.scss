@@ -1,0 +1,134 @@
+.stats-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 20rem;
+        height: 25rem;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
+        margin: 1rem 1rem 3rem 1rem;
+        background-size: 10rem 15rem;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        text-transform: uppercase;
+        transition: all .5s;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-1rem);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    &__confirmed-card {
+        background-image: url('../assets/mini-graphs/confirmed.svg');
+        position: relative;
+
+        &:hover {
+            background-color: rgba(#ff073a, .2);
+        }
+    }
+
+    &__recovered-card {
+        background-image: url('../assets/mini-graphs/recovered.svg');
+
+        &:hover {
+            background-color: rgba(#28a745, .2);
+        }
+    }
+
+    &__active-card {
+        background-image: url('../assets/mini-graphs/active.svg');
+
+        &:hover {
+            background-color: rgba(#007bff,.2);
+        }
+    }
+
+    &__deceased-card {
+        background-image: url('../assets/mini-graphs/deceased.svg');
+
+        &:hover {
+            background-color: rgba(#6c757d, .2);
+        }
+    }
+
+    &__critical-card {
+        background-image: url('../assets/mini-graphs/critical.svg');
+
+        &:hover {
+            background-color: rgba(#FF8048, .2);
+        }
+    }
+}
+
+.card-heading {
+    align-self: center;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: -3rem;
+}
+
+.card-data {
+    font-size: 2.5rem;
+}
+
+.card-data-new {
+    font-size: 1.2rem;
+}
+
+.heading-confirmed,
+.data-confirmed {
+    color: #ff073a;
+}
+
+.new-confirmed {
+    color: rgba(255, 7, 58, .6);
+}
+
+.heading-recovered,
+.data-recovered {
+    color: #28a745;
+}
+
+.new-recovered {
+    color: rgba(40, 167, 69, .6);
+}
+
+.heading-active,
+.data-active {
+    color: #007bff;
+}
+
+.new-active {
+    color: rgba(0, 123, 255, .6);
+}
+
+.heading-deceased,
+.data-deceased {
+    color: #6c757d;
+}
+
+.new-deceased {
+    color: rgba(108, 117, 125, .6);
+}
+
+.heading-critical,
+.data-critical {
+    color: #FF8048;
+}
+
+.new-critical {
+    color: rgba(255, 128, 72, .6);
+}

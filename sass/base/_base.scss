@@ -12,18 +12,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px( 10/16);
+  scroll-behavior: smooth;
 }
 
 body {
-   font-family: 'Open Sans',serif;
-  // .container {
-  //   width: 100%;
-  //   height: 100%;
-  //   margin: 0 auto;
-  //   color: #f4f2f2;
-  //   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //   min-height: 100vh;
-  // }
+   font-family: 'Josefin Sans', sans-serif;
+  .container {
+    width: 100%;
+    padding-left: 6.5rem;
+  }
 }

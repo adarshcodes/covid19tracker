@@ -2,15 +2,15 @@
 
 // @import "base/animation";
 @import "base/base";
-// @import "base/typography";
+@import "base/typography";
 
-// @import "components/buttons";
+@import "components/statsCard";
 // @import "components/stories";
 // @import "components/about-cards";
 // @import "components/ham-menu";
 
 @import "layout/navbar";
-// @import "layout/cta";
-// @import "layout/clients";
+@import "layout/header";
+@import "layout/stats";
 // @import "layout/footer";
 

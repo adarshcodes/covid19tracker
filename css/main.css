@@ -14,10 +14,244 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Open Sans',serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body .container {
+  width: 100%;
+  padding-left: 6.5rem;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 10rem !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin-bottom: 4rem;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.heading-primary__main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 3.5rem;
+}
+
+.heading-primary__sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -3rem;
+  letter-spacing: 1.74rem;
+  word-spacing: 1rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, right top, left top, from(#444444), to(#555555));
+  background-image: linear-gradient(to left, #444444, #555555);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+          transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-secondary sup {
+  font-size: 1.6rem;
+  color: #D94920;
+}
+
+.stats-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats-cards__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 25rem;
+  -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  margin: 1rem 1rem 3rem 1rem;
+  background-size: 10rem 15rem;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.stats-cards__cards:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.stats-cards__cards:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.stats-cards__confirmed-card {
+  background-image: url("../assets/mini-graphs/confirmed.svg");
+  position: relative;
+}
+
+.stats-cards__confirmed-card:hover {
+  background-color: rgba(255, 7, 58, 0.2);
+}
+
+.stats-cards__recovered-card {
+  background-image: url("../assets/mini-graphs/recovered.svg");
+}
+
+.stats-cards__recovered-card:hover {
+  background-color: rgba(40, 167, 69, 0.2);
+}
+
+.stats-cards__active-card {
+  background-image: url("../assets/mini-graphs/active.svg");
+}
+
+.stats-cards__active-card:hover {
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+.stats-cards__deceased-card {
+  background-image: url("../assets/mini-graphs/deceased.svg");
+}
+
+.stats-cards__deceased-card:hover {
+  background-color: rgba(108, 117, 125, 0.2);
+}
+
+.stats-cards__critical-card {
+  background-image: url("../assets/mini-graphs/critical.svg");
+}
+
+.stats-cards__critical-card:hover {
+  background-color: rgba(255, 128, 72, 0.2);
+}
+
+.card-heading {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: -3rem;
+}
+
+.card-data {
+  font-size: 2.5rem;
+}
+
+.card-data-new {
+  font-size: 1.2rem;
+}
+
+.heading-confirmed,
+.data-confirmed {
+  color: #ff073a;
+}
+
+.new-confirmed {
+  color: rgba(255, 7, 58, 0.6);
+}
+
+.heading-recovered,
+.data-recovered {
+  color: #28a745;
+}
+
+.new-recovered {
+  color: rgba(40, 167, 69, 0.6);
+}
+
+.heading-active,
+.data-active {
+  color: #007bff;
+}
+
+.new-active {
+  color: rgba(0, 123, 255, 0.6);
+}
+
+.heading-deceased,
+.data-deceased {
+  color: #6c757d;
+}
+
+.new-deceased {
+  color: rgba(108, 117, 125, 0.6);
+}
+
+.heading-critical,
+.data-critical {
+  color: #FF8048;
+}
+
+.new-critical {
+  color: rgba(255, 128, 72, 0.6);
 }
 
 /* NavBar */
@@ -41,6 +275,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
+  -webkit-box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .sidebar__list {
@@ -133,15 +369,19 @@ body {
   -webkit-transition: left 0.8s cubic-bezier(1, 0, 0, 1);
   transition: left 0.8s cubic-bezier(1, 0, 0, 1);
   padding-top: 3rem;
+  -webkit-box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.navigation__heading {
+.navigation__heading a {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.6rem;
   font-weight: 500;
+  text-decoration: none;
   letter-spacing: .2rem;
-  color: #deaa86;
+  color: #e7e7e7;
   text-align: center;
+  cursor: pointer;
 }
 
 .navigation__items {
@@ -167,7 +407,7 @@ body {
           align-items: center;
 }
 
-.navigation__links:link, .navigation__links:visited {
+.navigation__links {
   display: inline-block;
   color: #fff;
   font-size: 1.6rem;
@@ -219,4 +459,41 @@ body {
 
 /* End Of Navigation */
 /* End of NavBar */
+.header {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 34, 41, 0.6)), to(rgba(32, 34, 41, 0.6))), url("../assets/header-bg-2.jpg");
+  background-image: linear-gradient(to top, rgba(32, 34, 41, 0.6), rgba(32, 34, 41, 0.6)), url("../assets/header-bg-2.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 3.5rem;
+  -webkit-animation: toLogo 3s infinite;
+          animation: toLogo 3s infinite;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.section-stats {
+  background-color: #f7f7f7;
+  padding: 25rem 5rem;
+  margin-top: -26vh;
+}
 /*# sourceMappingURL=main.css.map */

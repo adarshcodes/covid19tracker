@@ -1,0 +1,73 @@
+// utilities //
+
+.u-center-text {
+    text-align: center !important;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 10rem !important;
+}
+
+h1,
+h2,
+h3,
+h4
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+// end of utilities //
+
+
+
+.heading-primary {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+
+
+    &__main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 600;
+        letter-spacing: 3.5rem;
+    }
+
+    &__sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: -3rem;
+        letter-spacing: 1.74rem;
+        word-spacing: 1rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to left, rgba(#444, 1), rgba(#555, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(#000, .2);
+    }
+
+    sup {
+        font-size: 1.6rem;
+        color: #D94920;
+    }
+}
