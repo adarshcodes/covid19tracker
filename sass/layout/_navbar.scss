@@ -4,33 +4,33 @@
 .sidebar {
     width: 6.5rem;
     height: 100%;
-    background-color: #F5F6FA;
+    background-color: #fff;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    box-shadow: 0.5rem 1rem 2rem rgba(#000, .2);
+    box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
 
     &__list {
         list-style: none;
         padding: 0;
-        height: 26rem;
+        height: 30rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
 
     &__links {
-        font-size: 1.95rem;
-        color: #777;
-        transition: color 1s;
+        font-size: 2.2rem;
+        color: rgb(151, 151, 151);
+        transition: all .2s;
     }
 
     &__links:hover {
-        color: #deaa86;
+        color: #ff8d5d;
     }
 
 }
@@ -64,6 +64,22 @@
     font-weight: 500;
     color: #666;
     transition: color .5s;
+}
+
+// sidebar-animation
+
+.line1style {
+    transform: rotate(-405deg) translate(-5px, 6px);
+    width: 2.5rem;
+}
+
+.line2style {
+    opacity: 0;
+}
+
+.line3style {
+    transform: rotate(405deg) translate(-5px, -6px);
+    width: 2.5rem;
 }
 
 /* End of SideBar */
@@ -104,7 +120,7 @@
     &__list {
         list-style: none;
         padding: 0;
-        height: 24rem;
+        height: 28rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -116,7 +132,7 @@
             display: inline-block;
             color: #fff;
             font-size: 1.6rem;
-            font-weight: 400;
+            font-weight: 300;
             letter-spacing: .1rem;
             text-transform: uppercase;
             text-decoration: none;
@@ -129,40 +145,9 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: #444;
+            color: rgb(49, 49, 49);
             transform: translateX(-1rem);
         }
-
-        // &::before {
-        //     content: "";
-        //     width: 0rem;
-        //     height: .1rem;
-        //     background-color: #deaa86;
-        //     position: absolute;
-        //     top: 1rem;
-        //     left: -4rem;
-        //     transition: width .5s cubic-bezier(1, 0, 0, 1);
-        // }
-
-        // &::after {
-        //     content: "";
-        //     width: 0rem;
-        //     height: .1rem;
-        //     background-color: #deaa86;
-        //     position: absolute;
-        //     top: 1rem;
-        //     right: -4rem;
-        //     transition: width .5s cubic-bezier(1, 0, 0, 1);
-        // }
-
-        // &:hover {
-        //     color: #deaa86;
-        // }
-
-        // &:hover::before,
-        // &:hover::after {
-        //     width: 3.5rem;
-        // }
     }
 }
 
@@ -180,23 +165,6 @@
 //     left: 6.5rem;
 // }
 
-.ham1style {
-    transform: rotate(-405deg) translate(-5px, 6px);
-    width: 2.5rem;
-}
-
-.ham2style {
-    opacity: 0;
-}
-
-.ham3style {
-    transform: rotate(405deg) translate(-5px, -6px);
-    width: 2.5rem;
-}
-
 /* End Of Navigation */
-
-
-
 
 /* End of NavBar */

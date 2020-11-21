@@ -5,7 +5,7 @@
 }
 
 .u-margin-bottom-big {
-    margin-bottom: 10rem !important;
+    margin-bottom: 6rem !important;
 }
 
 h1,
@@ -59,6 +59,7 @@ h5 {
     color: transparent;
     letter-spacing: 0.2rem;
     transition: all 0.2s;
+    margin-top: 8rem;
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
