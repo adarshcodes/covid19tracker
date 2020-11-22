@@ -60,14 +60,16 @@ h5 {
     letter-spacing: 0.2rem;
     transition: all 0.2s;
     margin-top: 8rem;
-
+    
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: 0.5rem 1rem 2rem rgba(#000, .2);
     }
+}
 
-    sup {
-        font-size: 1.6rem;
-        color: #D94920;
-    }
+.super {
+    font-size: 1.6rem;
+    color: #D94920;
+    animation: super-pulse .8s linear infinite;
+    transition: all .5s;
 }

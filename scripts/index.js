@@ -1,7 +1,6 @@
 // import {
 //     CountUp
-// } from './countUp.min.js';
-// HamBurger Animation //
+// } from './countUp.umd.js';
 
 const hamMenu = document.querySelector('.menu-icons');
 
@@ -114,16 +113,11 @@ countryList.forEach(country => {
     if (country.code == countryCode) {
         userCountry = country.name;
     }
+
+    if (userCountry == "United States") {
+        userCountry = 'USA';
+    }
 });
-
-if (userCountry == "United States") {
-    userCountry = 'USA';
-}
-
-function fetchCountry(countrySelect) {
-    userCountry = countrySelect;
-    console.log(userCountry);
-}
 
 userCountry = userCountry.toUpperCase();
 
@@ -140,8 +134,7 @@ async function getCovidData() {
 }
 
 
-// World Data
-
+// World Data Loading
 
 async function worldData() {
 
@@ -160,7 +153,7 @@ async function worldData() {
         worldStats = {
             cases: worldCases += data.cases,
             newCases: newWorldCases += data.todayCases,
-            recoverd: worldRecovered += data.recovered,
+            recovered: worldRecovered += data.recovered,
             newRecovered: newWorldRecovered += data.todayRecovered,
             active: worldActive += data.active,
             deaths: worldDeaths += data.deaths,
@@ -169,17 +162,44 @@ async function worldData() {
         };
     }
 
+    const options = {
+        duration: 3
+    };
+
     confirmedGlobal.innerHTML = worldStats.cases;
+    var confirmedAnim = new countUp.CountUp(confirmedGlobal, worldStats.cases, options);
+    confirmedAnim.start();
+
     newConfirmedGlobal.innerHTML = `+ ` + worldStats.newCases;
-    recoveredGlobal.innerHTML = worldStats.recoverd;
+    var newConfirmedAnim = new countUp.CountUp(newConfirmedGlobal, worldStats.newCases, options);
+    newConfirmedAnim.start();
+
+    recoveredGlobal.innerHTML = worldStats.recovered;
+    var recoveredAnim = new countUp.CountUp(recoveredGlobal, worldStats.recovered, options);
+    recoveredAnim.start();
+
     newRecoveredGlobal.innerHTML = `+ ` + worldStats.newRecovered;
+    var newRecoveredAnim = new countUp.CountUp(newRecoveredGlobal, worldStats.newRecovered, options);
+    newRecoveredAnim.start();
+
     activeGlobal.innerHTML = worldStats.active;
+    var activeAnim = new countUp.CountUp(activeGlobal, worldStats.active, options);
+    activeAnim.start();
+
     deceasedGlobal.innerHTML = worldStats.deaths;
+    var deceasedAnim = new countUp.CountUp(deceasedGlobal, worldStats.deaths, options);
+    deceasedAnim.start();
+
     newDeceasedGlobal.innerHTML = `+ ` + worldStats.newDeath;
+    var newDeceasedAnim = new countUp.CountUp(newDeceasedGlobal, worldStats.newDeath, options);
+    newDeceasedAnim.start();
+
     criticalGlobal.innerHTML = worldStats.critical;
+    var criticalAnim = new countUp.CountUp(criticalGlobal, worldStats.critical, options);
+    criticalAnim.start();
 }
 
-// CountryData
+// Country Data Loading
 
 async function countryData() {
     const response = await getCovidData();
@@ -204,7 +224,7 @@ async function countryData() {
                 test: countryTest = data.tests,
                 cases: countryCases = data.cases,
                 newCases: newCountryCases = data.todayCases,
-                recoverd: countryRecovered = data.recovered,
+                recovered: countryRecovered = data.recovered,
                 newRecovered: newCountryRecovered = data.todayRecovered,
                 active: countryActive = data.active,
                 deaths: countryDeaths = data.deaths,
@@ -216,16 +236,49 @@ async function countryData() {
 
     countryName.innerHTML = userCountry + ` Statistics <sup>Live <sup>&#x2764;</sup></sup>`;
 
+    const options = {
+        duration: 3
+    };
+
     populationCountry.innerHTML = countryStats.population;
+    var populationAnim = new countUp.CountUp(populationCountry, countryStats.population, options);
+    populationAnim.start();
+
     testCountry.innerHTML = countryStats.test;
+    var testAnim = new countUp.CountUp(testCountry, countryStats.test, options);
+    testAnim.start();
+
     confirmedCountry.innerHTML = countryStats.cases;
+    var confirmedAnim = new countUp.CountUp(confirmedCountry, countryStats.cases, options);
+    confirmedAnim.start();
+
     newConfirmedCountry.innerHTML = `+ ` + countryStats.newCases;
-    recoveredCountry.innerHTML = countryStats.recoverd;
+    var newConfirmedAnim = new countUp.CountUp(newConfirmedCountry, countryStats.newCases, options);
+    newConfirmedAnim.start();
+
+    recoveredCountry.innerHTML = countryStats.recovered;
+    var recoveredAnim = new countUp.CountUp(recoveredCountry, countryStats.recovered, options);
+    recoveredAnim.start();
+
     newRecoveredCountry.innerHTML = `+ ` + countryStats.newRecovered;
+    var newRecoveredAnim = new countUp.CountUp(newRecoveredCountry, countryStats.newRecovered, options);
+    newRecoveredAnim.start();
+
     activeCountry.innerHTML = countryStats.active;
+    var activeAnim = new countUp.CountUp(activeCountry, countryStats.active, options);
+    activeAnim.start();
+
     deceasedCountry.innerHTML = countryStats.deaths;
+    var deceasedAnim = new countUp.CountUp(deceasedCountry, countryStats.deaths, options);
+    deceasedAnim.start();
+
     newDeceasedCountry.innerHTML = `+ ` + countryStats.newDeath;
+    var newDeceasedAnim = new countUp.CountUp(newDeceasedCountry, countryStats.newDeath, options);
+    newDeceasedAnim.start();
+
     criticalCountry.innerHTML = countryStats.critical;
+    var criticalAnim = new countUp.CountUp(criticalCountry, countryStats.critical, options);
+    criticalAnim.start();
 }
 
 worldData();

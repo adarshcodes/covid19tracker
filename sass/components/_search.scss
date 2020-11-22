@@ -24,7 +24,7 @@
         background: #fff;
 
         border: 0;
-        border-radius: 5px;
+        border-radius: .5rem;
         box-shadow: 0 10px 35px rgba(0, 0, 0, .1);
         outline: none;
         padding: 1rem 1rem 1rem 6rem;
@@ -46,7 +46,7 @@
 .search-country {
     display: flex;
     justify-content: center;
-    align-items: flex-start;   
+    align-items: flex-start;
 
     background-color: #fff;
     padding-left: .2rem;
@@ -61,6 +61,7 @@
     height: 20rem;
 
     box-shadow: 0 10px 35px rgba(0, 0, 0, .1);
+    border-radius: 0 .5rem;
     overflow-y: scroll;
 
 

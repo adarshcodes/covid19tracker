@@ -1003,15 +1003,11 @@ function createCountryList() {
         }
 
         document.getElementById(`${ul_id}`).innerHTML += `
-            < li onclick = "fetchCountry(${country.name})", id = "${country.name}" >
+            <li id = "${country.name}">
             ${country.name}
             </li>
         `;
     });
-}
-
-function fetchCountry(countrySelect) {
-    console.log('working babe');
 }
 
 let listNum = 3;
@@ -1028,15 +1024,16 @@ input.addEventListener('focus', function () {
     countryContainer.style.width = '53rem';
 });
 
-// input.addEventListener('blur', function () {
-//     searchCountry.classList.toggle('hide');
-//     searchCountry.classList.toggle('slideOut');
-//     input.style.width = '50rem';
-//     countryContainer.style.width = '50rem';
-// });
+countryContainer.addEventListener('click', function () {
+    searchCountry.classList.toggle('hide');
+    searchCountry.classList.toggle('slideOut');
+    input.style.width = '50rem';
+    countryContainer.style.width = '50rem';
+});
 
 close.addEventListener('click', function () {
     searchCountry.classList.toggle('hide');
+    input.style.width = '50rem';
 });
 
 // Country Filter

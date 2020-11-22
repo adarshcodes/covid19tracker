@@ -25,6 +25,28 @@
   }
 }
 
+@-webkit-keyframes super-pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes super-pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,9 +141,13 @@ h5 {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.heading-secondary sup {
+.super {
   font-size: 1.6rem;
   color: #D94920;
+  -webkit-animation: super-pulse .8s linear infinite;
+          animation: super-pulse .8s linear infinite;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .search {
@@ -154,7 +180,7 @@ h5 {
   color: #6c757d;
   background: #fff;
   border: 0;
-  border-radius: 5px;
+  border-radius: .5rem;
   -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
   outline: none;
@@ -208,6 +234,7 @@ h5 {
   height: 20rem;
   -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 0 .5rem;
   overflow-y: scroll;
 }
 
@@ -473,6 +500,8 @@ h5 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+  -webkit-box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
 }
 
 .header__logo-box {
@@ -539,6 +568,7 @@ h5 {
   height: 25rem;
   -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
           box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  border-radius: .5rem;
   margin: 1rem 1rem 3rem 1rem;
   background-size: 10rem 15rem;
   background-position: 50% 100%;
@@ -630,6 +660,7 @@ h5 {
   letter-spacing: .1rem;
   font-weight: 600;
   font-size: 1.2rem;
+  text-align: center;
   margin-bottom: -3rem;
 }
 
@@ -639,6 +670,10 @@ h5 {
 
 .card-data-new {
   font-size: 1.2rem;
+  -webkit-animation: super-pulse .8s linear infinite;
+          animation: super-pulse .8s linear infinite;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .heading-population,
