@@ -16,7 +16,7 @@
     &__cards {
         display: flex;
         flex-direction: column;
-        flex: 1 0 15rem;
+        flex: 1 0 16rem;
         justify-content: space-around;
         align-items: center;
         width: 20rem;
@@ -42,6 +42,15 @@
 
         &:active {
             transform: translateY(0);
+        }
+    }
+
+    &__population-card {
+        background-image: url('../assets/mini-graphs/population.svg');
+        position: relative;
+
+        &:hover {
+            background-color: rgba(14, 145, 140, .2);
         }
     }
 
@@ -110,6 +119,15 @@
 
 .card-data-new {
     font-size: 1.2rem;
+}
+
+.heading-population,
+.data-population {
+    color: rgb(14, 145, 140);
+}
+
+.new-population {
+    color: rgba(14, 145, 140, 0.6);
 }
 
 .heading-test,

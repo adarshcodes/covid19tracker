@@ -1,3 +1,6 @@
+// import {
+//     CountUp
+// } from './countUp.min.js';
 // HamBurger Animation //
 
 const hamMenu = document.querySelector('.menu-icons');
@@ -29,7 +32,7 @@ let typewriterMain = new Typewriter(typeMain, {
 
 let typewriterSub = new Typewriter(typeSub, {
     delay: 300
-})
+});
 
 typewriterMain.typeString('Coronavirus')
     .start()
@@ -38,33 +41,29 @@ typewriterSub.typeString('Live tracker')
     .pauseFor(5000)
     .start()
 
+
 // End of Typing Effect //
 
 
 //########## Selecting all the Global Data Elements ############//
 
 // Confirmed Global Data
-const confirmedCardGlobal = document.querySelector('.stats-cards__confirmed-card');
 const confirmedGlobal = document.getElementById('global-confirmed');
 const newConfirmedGlobal = document.getElementById('global-confirmed-new');
 
 // Recovered Global Data
-const recoveredCardGlobal = document.querySelector('.stats-cards__recovered-card');
 const recoveredGlobal = document.getElementById('global-recovered');
 const newRecoveredGlobal = document.getElementById('global-recovered-new');
 
 // Active Global Data
-const activeCardGlobal = document.querySelector('.stats-cards__active-card');
 const activeGlobal = document.getElementById('global-active');
 const newActiveGlobal = document.getElementById('global-active-new');
 
 // Deceased Global Data
-const deceasedCardGlobal = document.querySelector('.stats-cards__deceased-card');
 const deceasedGlobal = document.getElementById('global-deceased');
 const newDeceasedGlobal = document.getElementById('global-deceased-new');
 
 // Critical Global Data
-const criticalCardGlobal = document.querySelector('.stats-cards__critical-card');
 const criticalGlobal = document.getElementById('global-critical');
 const newCriticalGlobal = document.getElementById('global-critical-new');
 
@@ -74,50 +73,37 @@ const newCriticalGlobal = document.getElementById('global-critical-new');
 //############# Selecting Country Data Elements #############/
 
 // country name heading
+const countryName = document.querySelector('.heading-country');
 
-const countryName = document.querySelector('.heading-secondary');
+// Population Country Data
+const populationCountry = document.getElementById('country-population');
 
 // Tests Country Data
-const testCardCountry = document.querySelector('.stats-cards__tests-card');
 const testCountry = document.getElementById('country-test');
 const newTestCountry = document.getElementById('country-test-new');
 
-// Tests Country Data
-const confirmedCardCountry = document.querySelector('.stats-cards__confirmed-card');
+// Confirmed Country Data
 const confirmedCountry = document.getElementById('country-confirmed');
 const newConfirmedCountry = document.getElementById('country-confirmed-new');
 
-// Tests Country Data
-const recoveredCardCountry = document.querySelector('.stats-cards__recovered-card');
+
+// Recovered Country Data
 const recoveredCountry = document.getElementById('country-recovered');
 const newRecoveredCountry = document.getElementById('country-recovered-new');
 
-// Tests Country Data
-const activeCardCountry = document.querySelector('.stats-cards__active-card');
+// Active Country Data
 const activeCountry = document.getElementById('country-active');
 const newActiveCountry = document.getElementById('country-active-new');
 
-// Tests Country Data
-const deceasedCardCountry = document.querySelector('.stats-cards__deceased-card');
+// Deceased Country Data
 const deceasedCountry = document.getElementById('country-deceased');
 const newDeceasedCountry = document.getElementById('country-deceased-new');
 
-// Tests Country Data
-const criticalCardCountry = document.querySelector('.stats-cards__critical-card');
+// Critical Country Data
 const criticalCountry = document.getElementById('country-critical');
 const newCriticalCountry = document.getElementById('country-critical-new');
 
 //############# End of Country Data Elements #############/
-
-
-
-// App Variables
-let appData = [],
-    casesList = [],
-    recoveredList = [],
-    activeList = [],
-    deathList = [],
-    criticalList = [];
 
 // User Country Code
 
@@ -130,26 +116,117 @@ countryList.forEach(country => {
     }
 });
 
+if (userCountry == "United States") {
+    userCountry = 'USA';
+}
+
+function fetchCountry(countrySelect) {
+    userCountry = countrySelect;
+    console.log(userCountry);
+}
+
+userCountry = userCountry.toUpperCase();
+
+
 
 ///############## API URL ##############//
 
 const apiURL = 'https://corona.lmao.ninja/v2/countries/';
 
-function fetchData(userCountry) {
-    fetch(apiURL)
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            dates = Object.keys(data);
-
-            dates.forEach(date => {
-                let DATA = data[date];
-                console.log(DATA.userCountry);
-            })
-        })
+async function getCovidData() {
+    const apiResponse = await fetch(apiURL);
+    const data = await apiResponse.json();
+    return data;
 }
 
-fetchData(userCountry);
 
-// Update UI Function
+// World Data
+
+
+async function worldData() {
+
+    const response = await getCovidData();
+    let worldCases = 0;
+    let newWorldCases = 0;
+    let worldRecovered = 0;
+    let newWorldRecovered = 0;
+    let worldActive = 0;
+    let worldDeaths = 0;
+    let newWorldDeaths = 0;
+    let worldCritical = 0;
+    let worldStats = '';
+
+    for (const data of response) {
+        worldStats = {
+            cases: worldCases += data.cases,
+            newCases: newWorldCases += data.todayCases,
+            recoverd: worldRecovered += data.recovered,
+            newRecovered: newWorldRecovered += data.todayRecovered,
+            active: worldActive += data.active,
+            deaths: worldDeaths += data.deaths,
+            newDeath: newWorldDeaths += data.todayDeaths,
+            critical: worldCritical += data.critical
+        };
+    }
+
+    confirmedGlobal.innerHTML = worldStats.cases;
+    newConfirmedGlobal.innerHTML = `+ ` + worldStats.newCases;
+    recoveredGlobal.innerHTML = worldStats.recoverd;
+    newRecoveredGlobal.innerHTML = `+ ` + worldStats.newRecovered;
+    activeGlobal.innerHTML = worldStats.active;
+    deceasedGlobal.innerHTML = worldStats.deaths;
+    newDeceasedGlobal.innerHTML = `+ ` + worldStats.newDeath;
+    criticalGlobal.innerHTML = worldStats.critical;
+}
+
+// CountryData
+
+async function countryData() {
+    const response = await getCovidData();
+
+    let countryPopulation = 0;
+    let countryTest = 0;
+    let countryCases = 0;
+    let newCountryCases = 0;
+    let countryRecovered = 0;
+    let newCountryRecovered = 0;
+    let countryActive = 0;
+    let countryDeaths = 0;
+    let newCountryDeaths = 0;
+    let countryCritical = 0;
+    let countryStats = '';
+
+    for (const data of response) {
+
+        if (data.country.toUpperCase() == userCountry) {
+            countryStats = {
+                population: countryPopulation = data.population,
+                test: countryTest = data.tests,
+                cases: countryCases = data.cases,
+                newCases: newCountryCases = data.todayCases,
+                recoverd: countryRecovered = data.recovered,
+                newRecovered: newCountryRecovered = data.todayRecovered,
+                active: countryActive = data.active,
+                deaths: countryDeaths = data.deaths,
+                newDeath: newCountryDeaths = data.todayDeaths,
+                critical: countryCritical = data.critical
+            };
+        }
+    }
+
+    countryName.innerHTML = userCountry + ` Statistics <sup>Live <sup>&#x2764;</sup></sup>`;
+
+    populationCountry.innerHTML = countryStats.population;
+    testCountry.innerHTML = countryStats.test;
+    confirmedCountry.innerHTML = countryStats.cases;
+    newConfirmedCountry.innerHTML = `+ ` + countryStats.newCases;
+    recoveredCountry.innerHTML = countryStats.recoverd;
+    newRecoveredCountry.innerHTML = `+ ` + countryStats.newRecovered;
+    activeCountry.innerHTML = countryStats.active;
+    deceasedCountry.innerHTML = countryStats.deaths;
+    newDeceasedCountry.innerHTML = `+ ` + countryStats.newDeath;
+    criticalCountry.innerHTML = countryStats.critical;
+}
+
+worldData();
+countryData();
