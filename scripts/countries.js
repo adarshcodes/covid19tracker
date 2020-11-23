@@ -1003,7 +1003,8 @@ function createCountryList() {
         }
 
         document.getElementById(`${ul_id}`).innerHTML += `
-            <li id = "${country.name}">
+            <li onclick = "fetchCountry('${country.name}')"
+            id = "${country.name}" >
             ${country.name}
             </li>
         `;
