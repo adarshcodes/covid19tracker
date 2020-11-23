@@ -141,13 +141,9 @@ h5 {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.super {
+.heading-secondary sup {
   font-size: 1.6rem;
   color: #D94920;
-  -webkit-animation: super-pulse .8s linear infinite;
-          animation: super-pulse .8s linear infinite;
-  -webkit-transition: all .5s;
-  transition: all .5s;
 }
 
 .search {

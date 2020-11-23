@@ -163,39 +163,40 @@ async function worldData() {
     }
 
     const options = {
-        duration: 3
+        prefix: '+'
     };
 
+
     confirmedGlobal.innerHTML = worldStats.cases;
-    var confirmedAnim = new countUp.CountUp(confirmedGlobal, worldStats.cases, options);
+    var confirmedAnim = new countUp.CountUp(confirmedGlobal, worldStats.cases);
     confirmedAnim.start();
 
-    newConfirmedGlobal.innerHTML = `+ ` + worldStats.newCases;
+    newConfirmedGlobal.innerHTML = worldStats.newCases;
     var newConfirmedAnim = new countUp.CountUp(newConfirmedGlobal, worldStats.newCases, options);
     newConfirmedAnim.start();
 
     recoveredGlobal.innerHTML = worldStats.recovered;
-    var recoveredAnim = new countUp.CountUp(recoveredGlobal, worldStats.recovered, options);
+    var recoveredAnim = new countUp.CountUp(recoveredGlobal, worldStats.recovered);
     recoveredAnim.start();
 
-    newRecoveredGlobal.innerHTML = `+ ` + worldStats.newRecovered;
+    newRecoveredGlobal.innerHTML = worldStats.newRecovered;
     var newRecoveredAnim = new countUp.CountUp(newRecoveredGlobal, worldStats.newRecovered, options);
     newRecoveredAnim.start();
 
     activeGlobal.innerHTML = worldStats.active;
-    var activeAnim = new countUp.CountUp(activeGlobal, worldStats.active, options);
+    var activeAnim = new countUp.CountUp(activeGlobal, worldStats.active);
     activeAnim.start();
 
     deceasedGlobal.innerHTML = worldStats.deaths;
-    var deceasedAnim = new countUp.CountUp(deceasedGlobal, worldStats.deaths, options);
+    var deceasedAnim = new countUp.CountUp(deceasedGlobal, worldStats.deaths);
     deceasedAnim.start();
 
-    newDeceasedGlobal.innerHTML = `+ ` + worldStats.newDeath;
+    newDeceasedGlobal.innerHTML = worldStats.newDeath;
     var newDeceasedAnim = new countUp.CountUp(newDeceasedGlobal, worldStats.newDeath, options);
     newDeceasedAnim.start();
 
     criticalGlobal.innerHTML = worldStats.critical;
-    var criticalAnim = new countUp.CountUp(criticalGlobal, worldStats.critical, options);
+    var criticalAnim = new countUp.CountUp(criticalGlobal, worldStats.critical);
     criticalAnim.start();
 }
 
@@ -237,47 +238,48 @@ async function countryData() {
     countryName.innerHTML = userCountry + ` Statistics <sup>Live <sup>&#x2764;</sup></sup>`;
 
     const options = {
-        duration: 3
+        duration: 3,
+        prefix: '+'
     };
 
     populationCountry.innerHTML = countryStats.population;
-    var populationAnim = new countUp.CountUp(populationCountry, countryStats.population, options);
+    var populationAnim = new countUp.CountUp(populationCountry, countryStats.population);
     populationAnim.start();
 
     testCountry.innerHTML = countryStats.test;
-    var testAnim = new countUp.CountUp(testCountry, countryStats.test, options);
+    var testAnim = new countUp.CountUp(testCountry, countryStats.test);
     testAnim.start();
 
     confirmedCountry.innerHTML = countryStats.cases;
-    var confirmedAnim = new countUp.CountUp(confirmedCountry, countryStats.cases, options);
+    var confirmedAnim = new countUp.CountUp(confirmedCountry, countryStats.cases);
     confirmedAnim.start();
 
-    newConfirmedCountry.innerHTML = `+ ` + countryStats.newCases;
+    newConfirmedCountry.innerHTML =+ countryStats.newCases;
     var newConfirmedAnim = new countUp.CountUp(newConfirmedCountry, countryStats.newCases, options);
     newConfirmedAnim.start();
 
     recoveredCountry.innerHTML = countryStats.recovered;
-    var recoveredAnim = new countUp.CountUp(recoveredCountry, countryStats.recovered, options);
+    var recoveredAnim = new countUp.CountUp(recoveredCountry, countryStats.recovered);
     recoveredAnim.start();
 
-    newRecoveredCountry.innerHTML = `+ ` + countryStats.newRecovered;
+    newRecoveredCountry.innerHTML =+ countryStats.newRecovered;
     var newRecoveredAnim = new countUp.CountUp(newRecoveredCountry, countryStats.newRecovered, options);
     newRecoveredAnim.start();
 
     activeCountry.innerHTML = countryStats.active;
-    var activeAnim = new countUp.CountUp(activeCountry, countryStats.active, options);
+    var activeAnim = new countUp.CountUp(activeCountry, countryStats.active);
     activeAnim.start();
 
     deceasedCountry.innerHTML = countryStats.deaths;
-    var deceasedAnim = new countUp.CountUp(deceasedCountry, countryStats.deaths, options);
+    var deceasedAnim = new countUp.CountUp(deceasedCountry, countryStats.deaths);
     deceasedAnim.start();
 
-    newDeceasedCountry.innerHTML = `+ ` + countryStats.newDeath;
+    newDeceasedCountry.innerHTML =+ countryStats.newDeath;
     var newDeceasedAnim = new countUp.CountUp(newDeceasedCountry, countryStats.newDeath, options);
     newDeceasedAnim.start();
 
     criticalCountry.innerHTML = countryStats.critical;
-    var criticalAnim = new countUp.CountUp(criticalCountry, countryStats.critical, options);
+    var criticalAnim = new countUp.CountUp(criticalCountry, countryStats.critical);
     criticalAnim.start();
 }
 
