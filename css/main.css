@@ -128,6 +128,7 @@ h5 {
   background-image: -webkit-gradient(linear, right top, left top, from(#444444), to(#555555));
   background-image: linear-gradient(to left, #444444, #555555);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
   -webkit-transition: all 0.2s;
