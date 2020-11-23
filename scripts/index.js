@@ -117,7 +117,6 @@ countryList.forEach(country => {
     }
 });
 
-    userCountry = userCountry.toUpperCase();
 //########### End of Country Code #############//
 
 //############## API URL ##############//
@@ -213,7 +212,7 @@ async function countryData() {
 
     for (const data of response) {
 
-        if (data.country.toUpperCase == userCountry.toUpperCase) {
+        if (data.country == userCountry) {
             countryStats = {
                 population: countryPopulation = data.population,
                 test: countryTest = data.tests,
@@ -228,6 +227,7 @@ async function countryData() {
             };
         }
     }
+
 
     countryName.innerHTML = userCountry + ` Statistics <sup>Live <sup>&#x2764;</sup></sup>`;
 
