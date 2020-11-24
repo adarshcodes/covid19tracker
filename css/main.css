@@ -226,6 +226,8 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 3rem 3rem 1rem 2rem;
   width: 50rem;
   height: 20rem;
@@ -490,10 +492,10 @@ h5 {
 /* End of NavBar */
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 34, 41, 0.6)), to(rgba(32, 34, 41, 0.6))), url("../assets/header-bg.jpg");
-  background-image: linear-gradient(to top, rgba(32, 34, 41, 0.6), rgba(32, 34, 41, 0.6)), url("../assets/header-bg.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 34, 41, 0.6)), to(rgba(32, 34, 41, 0.6))), url("../assets/header-bg-crp.jpg");
+  background-image: linear-gradient(to top, rgba(32, 34, 41, 0.6), rgba(32, 34, 41, 0.6)), url("../assets/header-bg-crp.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;

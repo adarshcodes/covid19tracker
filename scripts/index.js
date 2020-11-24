@@ -159,6 +159,9 @@ async function worldData() {
         prefix: '+'
     };
 
+    let ror = (worldStats.recovered / worldStats.cases) * 100;
+    console.log(Math.ceil(ror)+"%");
+
 
     confirmedGlobal.innerHTML = worldStats.cases;
     var confirmedAnim = new countUp.CountUp(confirmedGlobal, worldStats.cases);
@@ -282,6 +285,7 @@ async function countryData() {
 
 function fetchCountry(country) {
     userCountry = country;
+    input.value = country;
 
     if (userCountry == "United States") {
         userCountry = 'USA';

@@ -1,9 +1,9 @@
 .header {
     height: 100vh;
     background-image: linear-gradient(to top, rgba(32, 34, 41, .6), rgba(32, 34, 41, .6)),
-    url("../assets/header-bg.jpg");
+    url("../assets/header-bg-crp.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
