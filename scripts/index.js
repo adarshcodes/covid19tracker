@@ -95,7 +95,6 @@ const newDeceasedGlobal = document.getElementById('global-deceased-new');
 // Critical Global Data
 const criticalGlobal = document.getElementById('global-critical');
 const newCriticalGlobal = document.getElementById('global-critical-new');
-
 //########## End of Global Data Elements ############//
 
 
