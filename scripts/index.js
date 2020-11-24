@@ -1,6 +1,4 @@
-// import {
-//     CountUp
-// } from './countUp.umd.js';
+// ########## HamBurger Animation ###########//
 
 const hamMenu = document.querySelector('.menu-icons');
 
@@ -17,31 +15,63 @@ hamMenu.addEventListener('click', function () {
     line3.classList.toggle('line3style');
 });
 
-//End of HamBurger Animation //
+//########### End of HamBurger Animation #############//
 
 
-// Typing Effect //
+//########## Typing Effect ##########//
 
 let typeMain = document.getElementById('type-main');
 let typeSub = document.getElementById('type-sub');
 
 let typewriterMain = new Typewriter(typeMain, {
-    delay: 300
+    loop: true,
+    delay: 100
 });
 
 let typewriterSub = new Typewriter(typeSub, {
-    delay: 300
+    delay: 100,
+    loop: true
 });
 
 typewriterMain.typeString('Coronavirus')
-    .start()
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('#Stay <span style="color: #4DE682; font-size: 8rem;">Home</span>')
+    .pauseFor(2000)
+    .deleteChars(4)
+    .typeString('<strong><span style="color: #4DE682; font-size: 8rem;">Safe</span></strong>')
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString('<strong>#Wear a <span style="color: #4DE682; font-size: 8rem;">Mask</span></strong>')
+    .pauseFor(1800)
+    .deleteAll()
+    .typeString('<strong>#Be a <span style="color: #4DE682; font-size: 8rem;">Superhero</span></strong>')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('<strong>#Save <span style="color: #4DE682; font-size: 8rem;">Lives</span></strong>')
+    .pauseFor(1500)
+    .start();
 
 typewriterSub.typeString('Live tracker')
-    .pauseFor(5000)
-    .start()
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('Keep Your Distance')
+    .pauseFor(800)
+    .deleteAll()
+    .typeString('Wash Your Hands')
+    .pauseFor(800)
+    .deleteAll()
+    .typeString('Avoid Touching')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('<strong>#Stay<span style="color: #4DE682;">Strong</span></strong>')
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString('<strong>#Stop the <span style="color: #4DE682;">Spread</span></strong>')
+    .pauseFor(1000)
+    .start();
 
-
-// End of Typing Effect //
+//########## End of Typing Effect############ //
 
 
 //########## Selecting all the Global Data Elements ############//
@@ -160,7 +190,7 @@ async function worldData() {
     };
 
     let ror = (worldStats.recovered / worldStats.cases) * 100;
-    console.log(Math.ceil(ror)+"%");
+    console.log(Math.ceil(ror) + "%");
 
 
     confirmedGlobal.innerHTML = worldStats.cases;
