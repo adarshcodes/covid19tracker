@@ -36,19 +36,19 @@ let typewriterSub = new Typewriter(typeSub, {
 typewriterMain.typeString('Coronavirus')
     .pauseFor(1000)
     .deleteAll()
-    .typeString('#Stay <span style="color: #4DE682; font-size: 8rem;">Home</span>')
+    .typeString('#Stay<span style="color: #4DE682; font-size: 8rem;">Home</span>')
     .pauseFor(2000)
     .deleteChars(4)
     .typeString('<strong><span style="color: #4DE682; font-size: 8rem;">Safe</span></strong>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<strong>#Wear a <span style="color: #4DE682; font-size: 8rem;">Mask</span></strong>')
+    .typeString('<strong>#Wear<span style="font-size: 7rem;">A</span><span style="color: #4DE682; font-size: 8rem;">Mask</span></strong>')
     .pauseFor(1800)
     .deleteAll()
-    .typeString('<strong>#Be a <span style="color: #4DE682; font-size: 8rem;">Superhero</span></strong>')
+    .typeString('<strong>#Be<span style="font-size: 7rem;">A</span><span style="color: #4DE682; font-size: 8rem;">Superhero</span></strong>')
     .pauseFor(1500)
     .deleteAll()
-    .typeString('<strong>#Save <span style="color: #4DE682; font-size: 8rem;">Lives</span></strong>')
+    .typeString('<strong>#Save<span style="color: #4DE682; font-size: 8rem;">Lives</span></strong>')
     .pauseFor(1500)
     .start();
 
@@ -67,7 +67,7 @@ typewriterSub.typeString('Live tracker')
     .typeString('<strong>#Stay<span style="color: #4DE682;">Strong</span></strong>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<strong>#Stop the <span style="color: #4DE682;">Spread</span></strong>')
+    .typeString('<strong>#Stop<span style="font-size: 2.5rem;">The</span><span style="color: #4DE682; font-size: 3rem;">Spread</span></strong>')
     .pauseFor(1000)
     .start();
 
@@ -188,10 +188,6 @@ async function worldData() {
         prefix: '+'
     };
 
-    let ror = (worldStats.recovered / worldStats.cases) * 100;
-    console.log(Math.ceil(ror) + "%");
-
-
     confirmedGlobal.innerHTML = worldStats.cases;
     var confirmedAnim = new countUp.CountUp(confirmedGlobal, worldStats.cases);
     confirmedAnim.start();
@@ -223,8 +219,21 @@ async function worldData() {
     criticalGlobal.innerHTML = worldStats.critical;
     var criticalAnim = new countUp.CountUp(criticalGlobal, worldStats.critical);
     criticalAnim.start();
+
+
+    // Ratio of Recovery //
+
+    let rorValue = document.querySelector('.ror-value-global');
+    let rorCircle = document.getElementById('circle-global');
+
+    let ror = Math.ceil((worldStats.recovered / worldStats.cases) * 100);
+    rorValue.innerHTML = ror + "%";
+
+    rorCircle.style.strokeDashoffset = `calc(400 - (400 * ${ror}) / 100)`;
+
+    // End of Ratio of Recovery //
 }
-//############### Enf of the World Data on Startup ###############//
+//############### End of the World Data on Startup ###############//
 
 //############# Country Data Based on IP-Address ################//
 async function countryData() {
@@ -307,6 +316,22 @@ async function countryData() {
     criticalCountry.innerHTML = countryStats.critical;
     var criticalAnim = new countUp.CountUp(criticalCountry, countryStats.critical);
     criticalAnim.start();
+
+    // Ratio of Recovery //
+
+    let rorValue = document.querySelector('.ror-value-country');
+    let rorCircle = document.getElementById('circle-country');
+    let rorHeading = document.getElementById('heading-ror-country');
+
+
+    let ror = Math.ceil((countryStats.recovered / countryStats.cases) * 100);
+
+    rorHeading.innerHTML = `Ratio of recovery (${userCountry})`;
+    rorValue.innerHTML = ror + "%";
+
+    rorCircle.style.strokeDashoffset = `calc(400 - (400 * ${ror}) / 100)`;
+
+    // End of Ratio of Recovery //
 }
 //############# End of Country Data Based on IP-Address ################//
 
@@ -401,6 +426,21 @@ function fetchCountry(country) {
         criticalCountry.innerHTML = countryStats.critical;
         var criticalAnim = new countUp.CountUp(criticalCountry, countryStats.critical);
         criticalAnim.start();
+
+        // Ratio of Recovery //
+
+        let rorValue = document.querySelector('.ror-value-country');
+        let rorCircle = document.getElementById('circle-country');
+        let rorHeading = document.getElementById('heading-ror-country');
+
+        let ror = Math.ceil((countryStats.recovered / countryStats.cases) * 100);
+
+        rorHeading.innerHTML = `Ratio of recovery (${userCountry})`;
+        rorValue.innerHTML = ror + "%";
+
+        rorCircle.style.strokeDashoffset = `calc(400 - (400 * ${ror}) / 100)`;
+
+        // End of Ratio of Recovery //
     }
 
     countryData();

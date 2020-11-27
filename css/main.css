@@ -178,7 +178,6 @@ h5 {
   color: #6c757d;
   background: #fff;
   border: 0;
-  border-radius: .5rem;
   -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
   outline: none;
@@ -234,7 +233,6 @@ h5 {
   height: 20rem;
   -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
-  border-radius: 0 .5rem;
   overflow-y: scroll;
 }
 
@@ -285,6 +283,65 @@ h5 {
 
 .hide {
   display: none;
+}
+
+.percent {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+}
+
+.percent svg {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+}
+
+.percent svg circle {
+  width: 15rem;
+  height: 15rem;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  stroke-dasharray: 370;
+  stroke-linecap: round;
+}
+
+.percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: rgba(235, 235, 235, 0.6);
+}
+
+.percent svg circle:nth-child(2) {
+  stroke: rgba(40, 167, 69, 0.6);
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #28a745;
+}
+
+.number h2 {
+  font-size: 2rem;
+  -webkit-animation: super-pulse .8s linear infinite;
+          animation: super-pulse .8s linear infinite;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 /* NavBar */
@@ -526,7 +583,7 @@ h5 {
 }
 
 .section-stats {
-  background-color: #fff;
+  background-color: #fdfdfd;
   padding: 20rem 5rem;
   margin-top: -26vh;
 }
@@ -564,11 +621,11 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
   width: 20rem;
   height: 25rem;
   -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
           box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-  border-radius: .5rem;
   margin: 1rem 1rem 3rem 1rem;
   background-size: 10rem 15rem;
   background-position: 50% 100%;
@@ -651,6 +708,10 @@ h5 {
 
 .stats-cards__critical-card:hover {
   background-color: rgba(255, 128, 72, 0.2);
+}
+
+.stats-cards__ror:hover {
+  background-color: rgba(77, 230, 130, 0.2);
 }
 
 .card-heading {
@@ -737,5 +798,9 @@ h5 {
 
 .new-critical {
   color: rgba(255, 128, 72, 0.6);
+}
+
+.heading-ror {
+  color: #28a745;
 }
 /*# sourceMappingURL=main.css.map */

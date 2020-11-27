@@ -281,10 +281,6 @@ let countryList = [{
         code: 'AM'
     },
     {
-        name: 'Bosnia and Herzegovina',
-        code: 'BA'
-    },
-    {
         name: 'Oman',
         code: 'OM'
     },
@@ -893,3 +889,8 @@ function resetCountryList() {
     });
 }
 //########### End of Search_Bar Filteration #########//
+
+// ########### Ratio of Recovery ##########//
+
+
+// ########### End of Ratio of Recovery ##########//

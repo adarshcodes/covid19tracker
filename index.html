@@ -19,7 +19,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;400;500;600&family=Raleway:wght@200;300;400;500;600&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -166,6 +165,19 @@
                             <h1 id="global-critical" class="card-data data-critical">0</h1>
                             <h4 id="global-crtical-new" class="card-data-new new-critical">&#x2764;</h4>
                         </div>
+
+                        <div class="stats-cards__cards ror-global stats-cards__ror">
+                            <h5 class="card-heading heading-ror">Ratio of Recovery <br> (Global)</h5>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="50" class="circle-1"></circle>
+                                    <circle cx="70" cy="70" r="60" class="circle-2" id="circle-global"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="ror-value-global"></h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -238,12 +250,23 @@
                             <h1 id="country-critical" class="card-data data-critical">0</h1>
                             <h4 id="country-crtical-new" class="card-data-new new-critical">&#x2764;</h4>
                         </div>
+
+                        <div class="stats-cards__cards ror-country stats-cards__ror">
+                            <h5 class="card-heading heading-ror" id="heading-ror-country">Rate of Recovery</h5>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="50" class="circle-1"></circle>
+                                    <circle cx="70" cy="70" r="60" class="circle-2" id="circle-country"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="ror-value-country"></h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- End of Country Stats -->
-
-
 
             </section>
 
@@ -252,21 +275,12 @@
             <!-- Symptoms Section -->
 
             <section class="symptoms">
-                
+
             </section>
 
             <!-- End of Symptoms Section -->
-
-
-
-
-
-
     </div>
-
     <!-- End of Main-Container -->
-
-
 
     <!--###### Scripts-embedding ######-->
 
@@ -278,6 +292,11 @@
 
     <!-- Counter -->
     <script src="scripts/countUp.umd.js"></script>
+
+    <!-- Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
 
     <!-- js-files -->
     <script src="scripts/countries.js"></script>

@@ -1,5 +1,5 @@
 .section-stats {
-    background-color: #fff;
+    background-color: rgb(253, 253, 253);
     padding: 20rem 5rem;
     margin-top: -26vh;
 }
@@ -20,10 +20,10 @@
         justify-content: space-around;
         align-items: center;
 
+        background-color: #fff;
         width: 20rem;
         height: 25rem;
         box-shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
-        border-radius: .5rem;
 
         margin: 1rem 1rem 3rem 1rem;
         background-size: 10rem 15rem;
@@ -104,6 +104,12 @@
 
         &:hover {
             background-color: rgba(#FF8048, .2);
+        }
+    }
+
+    &__ror {
+        &:hover {
+            background-color:rgba(#4DE682, .2);
         }
     }
 }
@@ -188,6 +194,10 @@
 
 .new-critical {
     color: rgba(255, 128, 72, .6);
+}
+
+.heading-ror {
+    color: #28a745;
 }
 
 //End-of-Stats-Cards //
