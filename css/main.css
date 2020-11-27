@@ -586,6 +586,8 @@ h5 {
   background-color: #fdfdfd;
   padding: 20rem 5rem;
   margin-top: -26vh;
+  background: url("../assets/stats-bg.png") top no-repeat;
+  background-size: contain;
 }
 
 .stats-cards {
