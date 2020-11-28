@@ -227,8 +227,9 @@ async function worldData() {
     let rorCircle = document.getElementById('circle-global');
 
     let ror = Math.ceil((worldStats.recovered / worldStats.cases) * 100);
-    rorValue.innerHTML = ror + "%";
+    console.log(ror +' trust me this number exist in reality');
 
+    rorValue.innerHTML = ror + "%";
     rorCircle.style.strokeDashoffset = `calc(400 - (400 * ${ror}) / 100)`;
 
     // End of Ratio of Recovery //

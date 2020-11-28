@@ -582,6 +582,13 @@ h5 {
   text-align: center;
 }
 
+.hrule {
+  border: dotted 6px #F0F0F0;
+  border-bottom: none;
+  width: 5%;
+  margin: 5rem auto 1rem auto;
+}
+
 .section-stats {
   background-color: #fdfdfd;
   padding: 20rem 5rem;
