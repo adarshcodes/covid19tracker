@@ -1,0 +1,76 @@
+.section-contagion {
+    padding: 0rem 5rem 10rem 5rem;
+}
+
+.contagion-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contagion-card {
+    width: 30%;
+    height: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: all .5s;
+    overflow: hidden;
+    position: relative;
+    // flex: 1 0 30rem;    
+    margin: 5rem 1rem 4rem 1rem;
+
+    &__img {
+        height: 100%;
+        transform: translateX(-1rem) scale(1.4);
+        transition: all .5s;
+        // filter: grayscale(100%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-1rem) scale(1);
+        filter: blur(2px) brightness(70%);
+    }
+
+    &__caption {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+        color: #fff;
+        font-size: 2.5rem;
+        text-align: center;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        transform: translate(-50%, -80%);
+        font-size: 3rem;
+    }
+
+    &__caption-para {
+        font-size: 1.8rem;
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 200%);
+        color: #eee;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    &:hover &__caption-para {
+        transform: translate(-50%, 15%);
+    }
+
+    &:hover {
+        box-shadow: 5px 5px rgba(0, 98, 90, 0.4),
+            10px 10px rgba(#8d67ff, .2),
+            15px 15px rgba(#ff073a, .2),
+            20px 20px rgba(#28a745, .2),
+            25px 25px rgba(#007bff, .2);
+    }
+}

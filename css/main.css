@@ -148,6 +148,10 @@ h5 {
   color: #D94920;
 }
 
+.heading-contagion {
+  font-size: 2.5rem;
+}
+
 .search {
   padding: 10rem 0 0 0;
   display: -webkit-box;
@@ -395,7 +399,7 @@ h5 {
 }
 
 .sidebar__links:hover {
-  color: #FF8048;
+  color: #deaa86;
 }
 
 .menu-icons {
@@ -586,12 +590,11 @@ h5 {
   border: dotted 6px #F0F0F0;
   border-bottom: none;
   width: 5%;
-  margin: 5rem auto 1rem auto;
+  margin: 10rem auto 1rem auto;
 }
 
 .section-stats {
-  background-color: #fdfdfd;
-  padding: 20rem 5rem;
+  padding: 20rem 5rem 0rem 5rem;
   margin-top: -26vh;
   background: url("../assets/stats-bg.png") top no-repeat;
   background-size: contain;
@@ -811,5 +814,100 @@ h5 {
 
 .heading-ror {
   color: #28a745;
+}
+
+.section-contagion {
+  padding: 0rem 5rem 10rem 5rem;
+}
+
+.contagion-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contagion-card {
+  width: 30%;
+  height: 35rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden;
+  position: relative;
+  margin: 5rem 1rem 4rem 1rem;
+}
+
+.contagion-card__img {
+  height: 100%;
+  -webkit-transform: translateX(-1rem) scale(1.4);
+          transform: translateX(-1rem) scale(1.4);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contagion-card:hover .contagion-card__img {
+  -webkit-transform: translateX(-1rem) scale(1);
+          transform: translateX(-1rem) scale(1);
+  -webkit-filter: blur(2px) brightness(70%);
+          filter: blur(2px) brightness(70%);
+}
+
+.contagion-card__caption {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 150%);
+          transform: translate(-50%, 150%);
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.contagion-card:hover .contagion-card__caption {
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  font-size: 3rem;
+}
+
+.contagion-card__caption-para {
+  font-size: 1.8rem;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 200%);
+          transform: translate(-50%, 200%);
+  color: #eee;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contagion-card:hover .contagion-card__caption-para {
+  -webkit-transform: translate(-50%, 15%);
+          transform: translate(-50%, 15%);
+}
+
+.contagion-card:hover {
+  -webkit-box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(141, 103, 255, 0.2), 15px 15px rgba(255, 7, 58, 0.2), 20px 20px rgba(40, 167, 69, 0.2), 25px 25px rgba(0, 123, 255, 0.2);
+          box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(141, 103, 255, 0.2), 15px 15px rgba(255, 7, 58, 0.2), 20px 20px rgba(40, 167, 69, 0.2), 25px 25px rgba(0, 123, 255, 0.2);
 }
 /*# sourceMappingURL=main.css.map */
