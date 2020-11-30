@@ -36,19 +36,19 @@ let typewriterSub = new Typewriter(typeSub, {
 typewriterMain.typeString('Coronavirus')
     .pauseFor(1000)
     .deleteAll()
-    .typeString('#Stay<span style="color: #4DE682; font-size: 8rem;">Home</span>')
+    .typeString('#Stay<span style="color: #fbaf03; font-size: 8rem;">Home</span>')
     .pauseFor(2000)
     .deleteChars(4)
-    .typeString('<strong><span style="color: #4DE682; font-size: 8rem;">Safe</span></strong>')
+    .typeString('<strong><span style="color: #fbaf03; font-size: 8rem;">Safe</span></strong>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<strong>#Wear<span style="font-size: 7rem;">A</span><span style="color: #4DE682; font-size: 8rem;">Mask</span></strong>')
+    .typeString('<strong>#Wear<span style="font-size: 7rem;">A</span><span style="color: #fbaf03; font-size: 8rem;">Mask</span></strong>')
     .pauseFor(1800)
     .deleteAll()
-    .typeString('<strong>#Be<span style="font-size: 7rem;">A</span><span style="color: #4DE682; font-size: 8rem;">Superhero</span></strong>')
+    .typeString('<strong>#Be<span style="font-size: 7rem;">A</span><span style="color: #fbaf03; font-size: 8rem;">Superhero</span></strong>')
     .pauseFor(1500)
     .deleteAll()
-    .typeString('<strong>#Save<span style="color: #4DE682; font-size: 8rem;">Lives</span></strong>')
+    .typeString('<strong>#Save<span style="color: #fbaf03; font-size: 8rem;">Lives</span></strong>')
     .pauseFor(1500)
     .start();
 
@@ -64,10 +64,10 @@ typewriterSub.typeString('Live tracker')
     .typeString('Avoid Touching')
     .pauseFor(1000)
     .deleteAll()
-    .typeString('<strong>#Stay<span style="color: #4DE682;">Strong</span></strong>')
+    .typeString('<strong>#Stay<span style="color: #fbaf03;">Strong</span></strong>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<strong>#Stop<span style="font-size: 2.5rem;">The</span><span style="color: #4DE682; font-size: 3rem;">Spread</span></strong>')
+    .typeString('<strong>#Stop<span style="font-size: 2.5rem;">The</span><span style="color: #fbaf03; font-size: 3rem;">Spread</span></strong>')
     .pauseFor(1000)
     .start();
 
@@ -101,7 +101,7 @@ const newCriticalGlobal = document.getElementById('global-critical-new');
 //############# Selecting Country Data Elements #############/
 
 // country name heading
-const countryName = document.querySelector('.heading-country');
+const countryName = document.querySelector('.span-country');
 
 // Population Country Data
 const populationCountry = document.getElementById('country-population');
@@ -271,7 +271,7 @@ async function countryData() {
     }
 
 
-    countryName.innerHTML = userCountry + ` Statistics <sup>Live <sup>&#x2764;</sup></sup>`;
+    countryName.innerHTML = userCountry + `'s`;
 
     const options = {
         duration: 3,
@@ -381,7 +381,7 @@ function fetchCountry(country) {
             }
         }
 
-        countryName.innerHTML = userCountry + ` Statistics <sup>Live <sup>&#x2764;</sup></sup>`;
+        countryName.innerHTML = userCountry + `'s`;
 
         const options = {
             duration: 3,
