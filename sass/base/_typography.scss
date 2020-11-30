@@ -49,10 +49,14 @@ h5 {
 }
 
 .heading-secondary {
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
     display: inline-block;
-    color: #3d3d3d;
+    // color: #3d3d3d;
+    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     letter-spacing: 0.2rem;
     transition: all 0.2s;
     margin-top: 5rem;
@@ -67,9 +71,13 @@ h5 {
         color: #D94920;
     }
 
-    span {
-        color: #fbaf03;
-    }
+    // span {
+    //     // color: #fbaf03;
+    //     background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+    //     background-clip: text;
+    //     -webkit-background-clip: text;
+    //     color: transparent;
+    // }
 }
 
 .heading-contagion {
