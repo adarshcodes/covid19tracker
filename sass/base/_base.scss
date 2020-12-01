@@ -20,5 +20,10 @@ body {
   .container {
     width: 100%;
     padding-left: 6.5rem;
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
