@@ -4,13 +4,15 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/search";
+@import "components/attribution";
+@import "components/navbar";
 @import "components/recovery";
+@import "components/search";
 
-@import "layout/navbar";
-@import "layout/header";
-@import "layout/stats";
 @import "layout/contagion";
+@import "layout/header";
+@import "layout/prevention";
+@import "layout/stats";
 @import "layout/symptoms";
 
 
