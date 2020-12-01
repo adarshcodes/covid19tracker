@@ -29,6 +29,12 @@
         transition: all .2s;
         position: relative;
 
+        &:hover {
+            // background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+            
+            color:#fe8a39;
+        }
+
         &__tooltip {
             width: 10rem;
             text-align: center;
@@ -169,7 +175,7 @@
         display: inline-block;
         color: #fff;
         font-size: 1.6rem;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: .1rem;
         text-transform: uppercase;
         text-decoration: none;
