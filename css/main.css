@@ -263,30 +263,30 @@ h5 {
   opacity: 1;
 }
 
-.sidebar .menu-icons {
+.menu-icons {
   margin-top: 3rem;
   cursor: pointer;
 }
 
-.sidebar .menu-icons__line {
+.menu-icons__line {
   width: 2.2rem;
   height: .2rem;
   background-color: #555;
   margin-bottom: .6rem;
 }
 
-.sidebar .menu-icons:hover .sidebar .menu-icons__line {
+.menu-icons:hover .menu-icons__line {
   width: 2.2rem;
 }
 
-.sidebar .menu-icons .line1,
-.sidebar .menu-icons .line3 {
+.menu-icons .line1,
+.menu-icons .line3 {
   width: 1.8rem;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.sidebar .year {
+.year {
   letter-spacing: .18rem;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -296,17 +296,17 @@ h5 {
   transition: color .5s;
 }
 
-.sidebar .line1style {
+.line1style {
   -webkit-transform: rotate(-405deg) translate(-5px, 6px);
           transform: rotate(-405deg) translate(-5px, 6px);
   width: 2.5rem;
 }
 
-.sidebar .line2style {
+.line2style {
   opacity: 0;
 }
 
-.sidebar .line3style {
+.line3style {
   -webkit-transform: rotate(405deg) translate(-5px, -6px);
           transform: rotate(405deg) translate(-5px, -6px);
   width: 2.5rem;
