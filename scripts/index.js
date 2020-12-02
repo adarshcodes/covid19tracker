@@ -25,7 +25,7 @@ const newCriticalGlobal = document.getElementById('global-critical-new');
 //############# Selecting Country Data Elements #############/
 
 // country name heading
-const countryName = document.querySelector('.span-country');
+const countryName = document.querySelector('.heading-country');
 
 // Population Country Data
 const populationCountry = document.getElementById('country-population');
@@ -70,6 +70,7 @@ countryList.forEach(country => {
     }
 });
 
+
 //########### End of Country Code #############//
 
 //############## API URL ##############//
@@ -112,6 +113,7 @@ async function worldData() {
         prefix: '+'
     };
 
+    
     confirmedGlobal.innerHTML = worldStats.cases;
     var confirmedAnim = new countUp.CountUp(confirmedGlobal, worldStats.cases);
     confirmedAnim.start();
@@ -195,7 +197,7 @@ async function countryData() {
     }
 
 
-    countryName.innerHTML = userCountry + `'s`;
+    countryName.innerHTML = userCountry + `'s Stats <sup>Live<sup>&#x2764;</sup></sup>`;
 
     const options = {
         duration: 3,
