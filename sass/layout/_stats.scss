@@ -64,7 +64,6 @@
 
     &__population-card {
         background-image: url('../assets/mini-graphs/population.svg');
-        position: relative;
 
         &:hover {
             background-color: rgba(14, 145, 140, .2);
@@ -73,7 +72,6 @@
 
     &__tests-card {
         background-image: url('../assets/mini-graphs/tests.svg');
-        position: relative;
 
         &:hover {
             background-color: rgba(#8d67ff, .2);
@@ -82,7 +80,6 @@
 
     &__confirmed-card {
         background-image: url('../assets/mini-graphs/confirmed.svg');
-        position: relative;
 
         &:hover {
             background-color: rgba(#ff073a, .2);
