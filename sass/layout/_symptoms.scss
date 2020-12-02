@@ -200,6 +200,10 @@
         }
     }
 
+    .swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullet {
+        margin: .4rem !important;
+    }
+
     .swiper-container-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-custom,
     .swiper-pagination-fraction {

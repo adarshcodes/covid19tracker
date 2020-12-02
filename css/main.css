@@ -153,6 +153,10 @@ h5 {
   color: #D94920;
 }
 
+.heading-secondary span {
+  font-size: 3rem;
+}
+
 .heading-contagion {
   font-size: 2.5rem;
 }
@@ -1436,6 +1440,10 @@ h5 {
   .blog-slider__button {
     width: 50%;
   }
+}
+
+.blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-bullet {
+  margin: .4rem !important;
 }
 
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets,

@@ -59,7 +59,7 @@ h5 {
     letter-spacing: 0.2rem;
     transition: all 0.2s;
     margin-top: 5rem;
-    
+
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: 0.5rem 1rem 2rem rgba(#000, .2);
@@ -70,13 +70,9 @@ h5 {
         color: #D94920;
     }
 
-    // span {
-    //     // color: #fbaf03;
-    //     background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-    //     background-clip: text;
-    //     -webkit-background-clip: text;
-    //     color: transparent;
-    // }
+    span {
+        font-size: 3rem;
+    }
 }
 
 .heading-contagion {
