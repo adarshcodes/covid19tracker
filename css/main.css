@@ -840,6 +840,11 @@ h5 {
   margin-right: 10px;
 }
 
+.section-prevention ul li div .prevention-img-box img {
+  width: 15rem;
+  height: auto;
+}
+
 .section-prevention ul li:nth-of-type(odd) > div {
   left: 45px;
 }
