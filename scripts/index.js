@@ -307,7 +307,7 @@ function fetchCountry(country) {
             }
         }
 
-        countryName.innerHTML = userCountry + `'s`;
+        countryName.innerHTML = userCountry + `'s Stats <sup>Live<sup>&#x2764;</sup></sup>`;
 
         const options = {
             duration: 3,
