@@ -24,11 +24,11 @@ let typeSub = document.getElementById('type-sub');
 
 let typewriterMain = new Typewriter(typeMain, {
     loop: true,
-    delay: 100
+    delay: 80
 });
 
 let typewriterSub = new Typewriter(typeSub, {
-    delay: 100,
+    delay: 80,
     loop: true
 });
 
