@@ -6,6 +6,10 @@
 
 .u-margin-bottom-big {
     margin-bottom: 6rem !important;
+
+    @media screen and (max-width: 830px) {
+        margin-bottom: 4rem !important;
+    }
 }
 
 h1,
@@ -27,24 +31,29 @@ h5 {
 .heading-primary {
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     color: #fff;
     font-size: 5rem;
     text-align: center;
+}
 
+.heading-primary-main {
+    font-size: 6rem;
+    letter-spacing: 2.5rem;
 
-    &__main {
-        display: block;
-        font-size: 6rem;
-        letter-spacing: 2.5rem;
+    @media screen and (max-width: 830px) {
+        font-size: 4.5rem;
     }
+}
 
-    &__sub {
-        display: block;
-        font-size: 2rem;
-        margin-top: -3rem;
-        letter-spacing: 1.74rem;
-        word-spacing: 1rem;
+.heading-primary-sub {
+    font-size: 2rem;
+    margin-top: -3rem;
+    letter-spacing: 1.74rem;
+    word-spacing: 1rem;
+
+    @media screen and (max-width: 830px) {
+        font-size: 1.8rem;
     }
 }
 
@@ -72,6 +81,11 @@ h5 {
 
     span {
         font-size: 3rem;
+    }
+
+    @media screen and (max-width: 830px) {
+        font-size: 4rem;
+        margin-top: 2rem;
     }
 }
 
