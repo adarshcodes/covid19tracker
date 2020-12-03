@@ -25,9 +25,12 @@
     @media screen and (max-width: 768px) {
         min-height: 500px;
         height: auto;
-        margin: 180px auto;
+        margin: 18rem auto 10rem auto;
     }
 
+    @media screen and (max-width: 992px) {
+        max-width: 500px;
+    }
 
     @media screen and (max-height: 500px) and (min-width: 992px) {
         height: 350px;

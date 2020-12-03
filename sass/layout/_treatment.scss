@@ -1,6 +1,10 @@
 .section-treatment {
     padding: 5rem 5rem 10rem 5rem;
 
+    @media screen and (max-width: 650px) {
+        padding: 0 5rem 10rem 5rem;
+    }
+
     &__card {
         padding: 5rem;
         width: 80rem;
@@ -12,6 +16,7 @@
         border-radius: .5rem;
         box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
             0 15px 40px rgba(166, 173, 201, .2);
+
 
         &__img {
             width: 30rem;
@@ -63,12 +68,12 @@
         &__text {
             text-align: center;
             font-family: 'poppins',
-            sans-serif;
+                sans-serif;
             line-height: 2.5rem;
             margin: 2rem 0;
             font-size: 1.6rem;
-            color: #4e4a67; 
-            
+            color: #4e4a67;
+
             @media screen and (max-width: 480px) {
                 font-size: 1.2rem;
             }
@@ -80,7 +85,8 @@
 
         @media screen and (max-width: 750px) {
             width: 100%;
-            padding: 2rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
         }
     }
 }

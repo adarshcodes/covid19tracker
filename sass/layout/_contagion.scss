@@ -8,6 +8,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 905px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .contagion-card {
@@ -20,6 +26,14 @@
     // flex: 1 0 30rem;    
     margin: 5rem 1rem 4rem 1rem;
     border-radius: .5rem;
+
+    @media screen and (max-width: 905px) {
+        width: 68%;
+    }
+
+    @media screen and (max-width: 650px) {
+        width: 90%;
+    }
 
     &__img {
         height: 100%;
@@ -61,10 +75,18 @@
         color: #eee;
         text-align: center;
         transition: all .5s;
+
+        @media screen and (max-width: 905px) {
+            transform: translate(-50%, 400%);
+        }
     }
 
     &:hover &__caption-para {
         transform: translate(-50%, 15%);
+
+        @media screen and (max-width: 905px) {
+            transform: translate(-50%, 40%);
+        }
     }
 
     &:hover {
