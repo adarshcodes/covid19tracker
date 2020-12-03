@@ -71,8 +71,7 @@ body {
 }
 
 body .container {
-  width: 100%;
-  padding-left: 6.5rem;
+  margin-left: 6.5rem;
   overflow: hidden;
 }
 
@@ -92,6 +91,12 @@ body li {
   margin-bottom: 6rem !important;
 }
 
+@media screen and (max-width: 830px) {
+  .u-margin-bottom-big {
+    margin-bottom: 4rem !important;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -108,24 +113,34 @@ h5 {
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   color: #fff;
   font-size: 5rem;
   text-align: center;
 }
 
-.heading-primary__main {
-  display: block;
+.heading-primary-main {
   font-size: 6rem;
   letter-spacing: 2.5rem;
 }
 
-.heading-primary__sub {
-  display: block;
+@media screen and (max-width: 830px) {
+  .heading-primary-main {
+    font-size: 4.5rem;
+  }
+}
+
+.heading-primary-sub {
   font-size: 2rem;
   margin-top: -3rem;
   letter-spacing: 1.74rem;
   word-spacing: 1rem;
+}
+
+@media screen and (max-width: 830px) {
+  .heading-primary-sub {
+    font-size: 1.8rem;
+  }
 }
 
 .heading-secondary {
@@ -157,6 +172,13 @@ h5 {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 830px) {
+  .heading-secondary {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+}
+
 .heading-contagion {
   font-size: 2.5rem;
 }
@@ -182,8 +204,8 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
-  -webkit-box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .sidebar__list {
@@ -523,6 +545,12 @@ h5 {
   opacity: .8;
 }
 
+@media screen and (max-width: 830px) {
+  .search {
+    padding-top: 8rem;
+  }
+}
+
 .search-country {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -696,8 +724,8 @@ h5 {
 }
 
 .contagion-card:hover {
-  -webkit-box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(141, 103, 255, 0.2), 15px 15px rgba(255, 7, 58, 0.2), 20px 20px rgba(40, 167, 69, 0.2), 25px 25px rgba(0, 123, 255, 0.2);
-          box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(141, 103, 255, 0.2), 15px 15px rgba(255, 7, 58, 0.2), 20px 20px rgba(40, 167, 69, 0.2), 25px 25px rgba(0, 123, 255, 0.2);
+  -webkit-box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(141, 103, 255, 0.2), 5px 5px rgba(255, 7, 58, 0.2), 10px 10px rgba(40, 167, 69, 0.2), 15px 15px rgba(0, 123, 255, 0.2);
+          box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(141, 103, 255, 0.2), 5px 5px rgba(255, 7, 58, 0.2), 10px 10px rgba(40, 167, 69, 0.2), 15px 15px rgba(0, 123, 255, 0.2);
 }
 
 .header {
@@ -708,30 +736,26 @@ h5 {
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative;
   -webkit-box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
 }
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 3.5rem;
-  -webkit-animation: toLogo 3s infinite;
-          animation: toLogo 3s infinite;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.hero-banner {
+  height: 90%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section-prevention {
@@ -912,6 +936,12 @@ h5 {
   background-size: contain;
 }
 
+@media screen and (max-width: 830px) {
+  .section-stats {
+    padding: 20rem 5rem 5rem 5rem;
+  }
+}
+
 .country-stats {
   padding-top: 5rem;
 }
@@ -1059,7 +1089,7 @@ h5 {
 
 .card-data-new {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   -webkit-animation: super-pulse .8s linear infinite;
           animation: super-pulse .8s linear infinite;
   -webkit-transition: all .5s;
@@ -1605,7 +1635,7 @@ h5 {
 
 @media screen and (max-width: 992px) {
   .section-treatment__card {
-    width: 60rem;
+    width: 100%;
   }
 }
 

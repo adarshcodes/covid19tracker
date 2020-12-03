@@ -10,6 +10,10 @@
     margin-top: -26vh;
     background: url("../assets/stats-bg.png") top no-repeat;
     background-size: contain;
+
+    @media screen and (max-width: 830px) {
+        padding: 20rem 5rem 5rem 5rem;
+    }
 }
 
 .country-stats {
@@ -139,7 +143,7 @@
 
 .card-data-new {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     animation: super-pulse .8s linear infinite;
     transition: all .5s;
 }

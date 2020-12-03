@@ -32,27 +32,22 @@ let typewriterSub = new Typewriter(typeSub, {
     loop: true
 });
 
-// background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-// background-clip: text; 
-// -webkit-background-clip: text;
-// color: transparent;
-
 typewriterMain.typeString('Coronavirus')
     .pauseFor(1000)
     .deleteAll()
-    .typeString('#Stay<span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent; font-size: 8rem;">Home</span>')
+    .typeString('#Stay<span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent;">Home</span>')
     .pauseFor(2000)
     .deleteChars(4)
-    .typeString('<strong><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent; font-size: 8rem;">Safe</span></strong>')
+    .typeString('<strong><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent;">Safe</span></strong>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<strong>#Wear<span style="font-size: 7rem;">A</span><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent; font-size: 8rem;">Mask</span></strong>')
+    .typeString('<strong>#Wear <span>A </span><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent;">Mask</span></strong>')
     .pauseFor(1800)
     .deleteAll()
-    .typeString('<strong>#Be<span style="font-size: 7rem;">A</span><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent; font-size: 8rem;">Superhero</span></strong>')
+    .typeString('<strong>#Be <span>A </span><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent;"> Superhero</span></strong>')
     .pauseFor(1500)
     .deleteAll()
-    .typeString('<strong>#Save<span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent; font-size: 8rem;">Lives</span></strong>')
+    .typeString('<strong>#Save<span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent;">Lives</span></strong>')
     .pauseFor(1500)
     .start();
 
@@ -71,7 +66,7 @@ typewriterSub.typeString('Live tracker')
     .typeString('<strong>#Stay<span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent;">Strong</span></strong>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<strong>#Stop<span style="font-size: 2.5rem;">The</span><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent; font-size: 3rem;">Spread</span></strong>')
+    .typeString('<strong>#Stop<span>The</span><span style="background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); background-clip: text; -webkit-background-clip: text; color: transparent;">Spread</span></strong>')
     .pauseFor(1000)
     .start();
 
