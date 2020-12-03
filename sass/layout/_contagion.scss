@@ -1,5 +1,9 @@
 .section-contagion {
     padding: 0rem 5rem 5rem 5rem;
+
+    @media screen and (max-width: 830px) {
+        padding: 0rem 5rem 0 5rem;
+    }
 }
 
 .contagion-cards-container {
@@ -14,6 +18,7 @@
         justify-content: center;
         align-items: center;
     }
+
 }
 
 .contagion-card {
@@ -35,15 +40,27 @@
         width: 90%;
     }
 
+    @media screen and (max-width: 400px) {
+        margin: 3rem 1rem 2rem 1rem;
+    }
+
     &__img {
         height: 100%;
         transform: translateX(-1rem) scale(1.4);
         transition: all .5s;
+
+        @media screen and (max-width: 400px) {
+            transform: translateX(-10rem) scale(1.4);
+        }
     }
 
     &:hover &__img {
         transform: translateX(-1rem) scale(1);
         filter: blur(2px) brightness(70%);
+
+        @media screen and (max-width: 400px) {
+            transform: translateX(-15rem) scale(1);
+        }
     }
 
     &__caption {
@@ -57,12 +74,20 @@
         text-align: center;
         transition: all .5s;
         backface-visibility: hidden;
+
+        @media screen and (max-width: 400px) {
+            font-size: 2rem;
+        }
     }
 
     &:hover &__caption {
         transform: translate(-50%, -100%);
         font-size: 3rem;
-        font-weight: 700;        
+        font-weight: 700;
+
+        @media screen and (max-width: 400px) {
+            font-size: 2.8rem;
+        }
     }
 
     &__caption-para {
@@ -86,6 +111,10 @@
 
         @media screen and (max-width: 905px) {
             transform: translate(-50%, 40%);
+        }
+
+        @media screen and (max-width: 400px) {
+            transform: translate(-50%, 10%);
         }
     }
 

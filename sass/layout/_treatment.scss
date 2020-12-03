@@ -46,10 +46,18 @@
                 color: #fff;
                 padding: -3rem .1rem;
                 background-color: #3c3f64;
+
+                @media screen and (max-width: 400px) {
+                    font-size: 1.9rem;
+                }
             }
 
             @media screen and (max-width: 750px) {
                 width: 100%;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 1.7rem;
             }
         }
 
@@ -88,5 +96,9 @@
             padding-left: 5rem;
             padding-right: 5rem;
         }
+
+         @media screen and (max-width: 400px) {
+             padding: 2rem;
+         }
     }
 }

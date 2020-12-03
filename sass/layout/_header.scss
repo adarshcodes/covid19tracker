@@ -7,6 +7,11 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 400px) {
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    }
 }
 
 .hero-banner {
@@ -17,4 +22,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media screen and (max-width: 500px) {
+        height: 100%;
+    }
 }

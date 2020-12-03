@@ -1,6 +1,10 @@
 .section-symptoms {
     overflow: hidden;
     padding-bottom: 5rem;
+
+    @media screen and (max-width: 400px) {
+        padding-bottom: 0;
+    }
 }
 
 .blog-slider {
