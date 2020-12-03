@@ -26,6 +26,8 @@
     align-items: center;
 
     &__cards {
+        position: relative;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         flex: 1 0 16rem;
@@ -37,7 +39,7 @@
         width: 20rem;
         height: 25rem;
         box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
-        0 15px 40px rgba(166, 173, 201, .2);
+            0 15px 40px rgba(166, 173, 201, .2);
 
         margin: 3rem 1rem 3rem 1rem;
         background-size: 10rem 15rem;
@@ -72,7 +74,6 @@
 
     &__tests-card {
         background-image: url('../assets/mini-graphs/tests.svg');
-
         &:hover {
             background-color: rgba(#8d67ff, .2);
         }
@@ -80,7 +81,6 @@
 
     &__confirmed-card {
         background-image: url('../assets/mini-graphs/confirmed.svg');
-
         &:hover {
             background-color: rgba(#ff073a, .2);
         }
@@ -88,7 +88,6 @@
 
     &__recovered-card {
         background-image: url('../assets/mini-graphs/recovered.svg');
-
         &:hover {
             background-color: rgba(#28a745, .2);
         }
@@ -139,7 +138,8 @@
 }
 
 .card-data-new {
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     animation: super-pulse .8s linear infinite;
     transition: all .5s;
 }
