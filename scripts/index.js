@@ -57,19 +57,23 @@ const newCriticalCountry = document.getElementById('country-critical-new');
 //############# End of Country Data Elements #############/
 
 //############# User Country Code for GeoLocation ################//
-let countryCode = geoplugin_countryCode();
+
+
 let userCountry;
 
-countryList.forEach(country => {
-    if (country.code == countryCode) {
-        userCountry = country.name;
-    }
+const geoApi = 'https://api.ipdata.co/?api-key=test';
 
-    if (userCountry == "United States") {
+async function getLocation() {
+    const res = await fetch(geoApi);
+    const data = await res.json();
+    userCountry = data.country_name;
+
+    if (userCountry == 'United States') {
         userCountry = 'USA';
     }
-});
+}
 
+getLocation();
 
 //########### End of Country Code #############//
 
