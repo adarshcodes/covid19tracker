@@ -927,8 +927,8 @@ h5 {
 
 @media screen and (max-width: 400px) {
   .contagion-card__img {
-    -webkit-transform: translateX(-5rem) scale(1.4);
-            transform: translateX(-5rem) scale(1.4);
+    -webkit-transform: translateX(-2rem) scale(1.4);
+            transform: translateX(-2rem) scale(1.4);
   }
 }
 
@@ -941,8 +941,8 @@ h5 {
 
 @media screen and (max-width: 400px) {
   .contagion-card:hover .contagion-card__img {
-    -webkit-transform: translateX(-5rem) scale(1);
-            transform: translateX(-5rem) scale(1);
+    -webkit-transform: translateX(-2rem) scale(1);
+            transform: translateX(-2rem) scale(1);
   }
 }
 
@@ -1453,7 +1453,7 @@ h5 {
 
 .card-data-new {
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   -webkit-animation: super-pulse .8s linear infinite;
           animation: super-pulse .8s linear infinite;
   -webkit-transition: all .5s;
