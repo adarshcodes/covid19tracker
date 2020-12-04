@@ -2056,7 +2056,7 @@ h5 {
 
 .section-footer {
   text-align: center;
-  padding: 0rem 0 2rem 0;
+  padding: 20rem 0 2rem 0;
 }
 
 .creator-part {
@@ -2154,7 +2154,13 @@ h5 {
 .footer-rule {
   border: dotted 6px rgba(255, 7, 58, 0.1);
   border-bottom: none;
-  width: 25%;
+  width: 10%;
   margin: 5rem auto;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-rule {
+    width: 25%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
