@@ -201,7 +201,7 @@ async function countryData() {
     }
 
 
-    countryName.innerHTML = userCountry + `'s Stats <sup>Live<sup>&#x2764;</sup></sup>`;
+    countryName.innerHTML = userCountry + `'s Stats <sup>Live<sup><i class="fad fa-heart-circle"></i></sup></sup>`;
 
     const options = {
         duration: 3,
@@ -311,7 +311,7 @@ function fetchCountry(country) {
             }
         }
 
-        countryName.innerHTML = userCountry + `'s Stats <sup>Live<sup>&#x2764;</sup></sup>`;
+        countryName.innerHTML = userCountry + `'s Stats <sup>Live<sup><i class="fad fa-heart-circle"></i></sup></sup>`;
 
         const options = {
             duration: 3,
