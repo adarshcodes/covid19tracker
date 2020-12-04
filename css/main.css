@@ -1921,7 +1921,7 @@ h5 {
 }
 
 .section-treatment {
-  padding: 5rem 5rem 10rem 5rem;
+  padding: 5rem 5rem 2rem 5rem;
 }
 
 @media screen and (max-width: 650px) {
@@ -2052,5 +2052,109 @@ h5 {
   .section-treatment__card {
     padding: 2rem;
   }
+}
+
+.section-footer {
+  text-align: center;
+  padding: 0rem 0 2rem 0;
+}
+
+.creator-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 0 4rem;
+}
+
+.text-app {
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-app h3 {
+  font-size: 3rem;
+  color: rgba(255, 7, 58, 0.7);
+  background-color: rgba(255, 7, 58, 0.2);
+}
+
+@media screen and (max-width: 500px) {
+  .text-app h3 {
+    font-size: 2.8rem;
+  }
+}
+
+.copyright-text {
+  line-height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.copyright-text p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  color: #4e4a67;
+}
+
+@media screen and (max-width: 500px) {
+  .copyright-text p {
+    font-size: 1.5;
+  }
+}
+
+.heart-footer {
+  -webkit-animation: super-pulse .8s linear infinite;
+          animation: super-pulse .8s linear infinite;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  font-size: 2.5rem;
+  color: rgba(255, 7, 58, 0.7);
+}
+
+@media screen and (max-width: 500px) {
+  .heart-footer {
+    font-size: 2rem;
+  }
+}
+
+.footer-rule {
+  border: dotted 6px rgba(255, 7, 58, 0.1);
+  border-bottom: none;
+  width: 25%;
+  margin: 5rem auto;
 }
 /*# sourceMappingURL=main.css.map */
