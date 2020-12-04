@@ -3,6 +3,10 @@
     border-bottom: none;
     width: 5%;
     margin: 10rem auto 1rem auto;
+
+    @media screen and (max-width: 500px) {
+        margin-top: 4rem;
+    }
 }
 
 .section-stats {
@@ -13,6 +17,10 @@
 
     @media screen and (max-width: 830px) {
         padding: 20rem 5rem 0 5rem;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 18rem 1rem 0 1rem;
     }
 }
 
@@ -67,6 +75,11 @@
             max-width: 20rem;
             height: 24rem;
             margin: 2rem 1rem 2rem 1rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            max-width: 15rem;
+            height: 20rem;
         }
 
         &:hover {
@@ -162,6 +175,10 @@
 
 .card-data {
     font-size: 2.5rem;
+
+    @media screen and (max-width: 450px) {
+        font-size: 2rem;
+    }
 }
 
 .card-data-new {
@@ -236,6 +253,11 @@
 
 .heading-ror {
     color: #28a745;
+
+    @media screen and (max-width: 450px) {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
 }
 
 //End-of-Stats-Cards //

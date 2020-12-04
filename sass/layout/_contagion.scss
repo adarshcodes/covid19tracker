@@ -4,6 +4,11 @@
     @media screen and (max-width: 830px) {
         padding: 0rem 5rem 0 5rem;
     }
+
+    @media screen and (max-width: 450px) {
+        padding: 0rem 1rem;
+    }
+    
 }
 
 .contagion-cards-container {
@@ -42,6 +47,8 @@
 
     @media screen and (max-width: 400px) {
         margin: 3rem 1rem 2rem 1rem;
+        width: 80%;
+        height: 25rem;
     }
 
     &__img {
@@ -50,7 +57,7 @@
         transition: all .5s;
 
         @media screen and (max-width: 400px) {
-            transform: translateX(-10rem) scale(1.4);
+            transform: translateX(-5rem) scale(1.4);
         }
     }
 
@@ -59,7 +66,7 @@
         filter: blur(2px) brightness(70%);
 
         @media screen and (max-width: 400px) {
-            transform: translateX(-15rem) scale(1);
+            transform: translateX(-5rem) scale(1);
         }
     }
 

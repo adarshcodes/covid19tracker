@@ -554,6 +554,137 @@
             </section>
             <!-- End of Treatment Section -->
 
+            <!-- Test Yourself Section -->
+
+            <section class="section-test" id="test-section">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">Test Yourself</h2>
+                </div>
+
+                <div class="test-card">
+                    <form id="symptom-form" action="/NOOOO" method="get">
+
+                        <div class="first-page">
+                            <label for='terms'>For whom you are taking this test?</label>
+                            <br>
+                            <label>
+                                <input type="radio" id="terms-self" name='testforSelf'>
+                                Myself
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" id="terms-else" name='testforSelf'>
+                                Someone else
+                            </label>
+                            <br>
+
+                            <label>
+                                What's your Name?
+                                <br>
+                                <input type="text" id="name" name='name'>
+                            </label>
+                            <br>
+                            <label>
+                                What's your age?
+                                <br>
+                                <input type="text" id="age" name='age'>
+                            </label>
+                        </div>
+
+                        <div class="second-page">
+
+                            <!--   Symp     -->
+
+                            <label for='symptoms'>Are you having one or more symptoms?</label>
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="cough-fever" name='no-symptoms'>
+                                None
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" id="none" name='cough-fever'>
+                                Dry Cough, Headache or Fever
+                            </label>
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="breath" name='breath'>
+                                Feeling Shortness of Breath
+                            </label>
+
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="throat" name='throat'>
+                                Sore throat
+                            </label>
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="nose" name='nose'>
+                                Running nose or Loss of taste and smell
+                            </label>
+                            <br>
+                            <!--  Disease      -->
+
+                            <label for='symptoms'>Do you have currently any of these health conditions?</label>
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="cough-fever" name='no-symptoms'>
+                                None
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" id="none" name='cough-fever'>
+                                Dry Cough, Headache or Fever
+                            </label>
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="breath" name='breath'>
+                                Feeling Shortness of Breath
+                            </label>
+
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="throat" name='throat'>
+                                Sore throat
+                            </label>
+                            <br>
+
+                            <label>
+                                <input type="checkbox" id="nose" name='nose'>
+                                Running nose or Loss of taste and smell
+                            </label>
+                        </div>
+
+
+                        <!--   Exposure to Cov   -->
+                        <label>
+                            Have you or your family member been a close contact to covid patient?
+
+                            <br>
+
+                            <input type="radio" id="yes" name='yn'>
+                            <label for="yes"> Yes</label>
+                            <br>
+
+                            <input type="radio" id="no" name='yn'>
+                            <label for="no">No</label>
+                        </label>
+
+                        <br>
+                        <input type="submit">
+                    </form>
+                </div>
+            </section>
+
+            <!-- End of Test Yourself Section -->
+
 
 
 
@@ -577,9 +708,6 @@
     <!-- End of Main-Container -->
 
     <!--###### Scripts-embedding ######-->
-
-    <!-- Geoplugin  -->
-    <!-- <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script> -->
 
     <!-- Typewriter -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
