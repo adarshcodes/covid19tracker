@@ -2056,7 +2056,13 @@ h5 {
 
 .section-footer {
   text-align: center;
-  padding: 20rem 0 2rem 0;
+  padding: 15rem 0 2rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  .section-footer {
+    padding: 5rem 0 2rem 0;
+  }
 }
 
 .creator-part {
@@ -2077,7 +2083,7 @@ h5 {
 }
 
 .text-app {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2120,13 +2126,13 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 
 .copyright-text p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: #4e4a67;
 }
 
@@ -2161,6 +2167,53 @@ h5 {
 @media screen and (max-width: 500px) {
   .footer-rule {
     width: 25%;
+    margin: 0 auto 3rem auto;
   }
+}
+
+.socialicons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.social {
+  margin-right: 2.18rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.social:hover {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
+.linkedin {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #00acee;
+}
+
+.instagram {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#8134af), color-stop(#992ea7), color-stop(#ae289e), color-stop(#bf2394), color-stop(#ce238a), color-stop(#e0317e), color-stop(#ed4472), color-stop(#f75868), color-stop(#ff7a5f), color-stop(#ff9b5c), color-stop(#ffbb64), to(#feda77));
+  background-image: linear-gradient(to right bottom, #8134af, #992ea7, #ae289e, #bf2394, #ce238a, #e0317e, #ed4472, #f75868, #ff7a5f, #ff9b5c, #ffbb64, #feda77);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.github {
+  color: #474747;
 }
 /*# sourceMappingURL=main.css.map */
