@@ -2210,6 +2210,7 @@ h5 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#8134af), color-stop(#992ea7), color-stop(#ae289e), color-stop(#bf2394), color-stop(#ce238a), color-stop(#e0317e), color-stop(#ed4472), color-stop(#f75868), color-stop(#ff7a5f), color-stop(#ff9b5c), color-stop(#ffbb64), to(#feda77));
   background-image: linear-gradient(to right bottom, #8134af, #992ea7, #ae289e, #bf2394, #ce238a, #e0317e, #ed4472, #f75868, #ff7a5f, #ff9b5c, #ffbb64, #feda77);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
