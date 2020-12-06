@@ -58,7 +58,6 @@ const newCriticalCountry = document.getElementById('country-critical-new');
 
 //############# User Country Code for GeoLocation ################//
 
-
 let userCountry;
 
 const geoApi = 'https://api.ipdata.co/?api-key=test';
