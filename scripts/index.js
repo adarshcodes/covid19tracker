@@ -72,7 +72,6 @@ async function getLocation() {
         userCountry = 'USA';
     }
 }
-
 getLocation();
 
 //########### End of Country Code #############//
