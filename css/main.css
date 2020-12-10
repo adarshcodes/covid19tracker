@@ -242,6 +242,22 @@ h5 {
   font-size: 2.5rem;
 }
 
+.attribution {
+  font-size: 1rem;
+  color: #3c3f64;
+}
+
+.attribution__dev-atr {
+  font-size: 1.05rem;
+  color: #fff;
+  padding: .5rem;
+  background-color: #3c3f64;
+}
+
+.attr-2 {
+  margin-left: 5rem;
+}
+
 /* NavBar */
 /* SideBar */
 .sidebar {
