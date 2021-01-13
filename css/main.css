@@ -1326,8 +1326,8 @@ h5 {
   background-color: #fff;
   width: 20rem;
   height: 25rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   margin: 3rem 1rem 3rem 1rem;
   background-size: 10rem 15rem;
   background-position: 50% 100%;
