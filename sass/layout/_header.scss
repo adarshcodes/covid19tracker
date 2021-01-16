@@ -6,7 +6,9 @@
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+    // box-shadow: 0.1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
 
     @media screen and (max-width: 400px) {
         height: 80vh;

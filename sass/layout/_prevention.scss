@@ -1,6 +1,6 @@
 .section-prevention {
     padding-bottom: 5rem;
-    
+
     ul {
         margin-top: 7rem;
 
@@ -23,7 +23,9 @@
                 z-index: 2;
                 background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
                 border-radius: 50%;
-                box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+                // box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+                box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
             }
 
             div {
@@ -34,7 +36,8 @@
                 background: #fff;
                 // box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
                 //     0 15px 40px rgba(166, 173, 201, .2);
-                box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+                // box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+                box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
                 border-radius: 5px;
                 display: flex;
                 align-items: center;
