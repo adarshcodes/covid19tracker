@@ -245,6 +245,7 @@ h5 {
 .attribution {
   font-size: 1rem;
   color: #3c3f64;
+  margin-left: 5rem;
 }
 
 .attribution__dev-atr {
@@ -252,10 +253,6 @@ h5 {
   color: #fff;
   padding: .5rem;
   background-color: #3c3f64;
-}
-
-.attr-2 {
-  margin-left: 5rem;
 }
 
 /* NavBar */
