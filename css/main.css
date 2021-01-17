@@ -279,8 +279,8 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -7px 31px 30px 2px;
-          box-shadow: rgba(0, 0, 0, 0.1) -7px 31px 30px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -7px 0px 30px 2px;
+          box-shadow: rgba(0, 0, 0, 0.1) -7px 0px 30px 2px;
 }
 
 @media screen and (max-width: 650px) {
