@@ -71,6 +71,8 @@ async function getLocation() {
         userCountry = 'USA';
     }
 }
+
+console.log(`This is the user GeoLocation: ${userCountry}`);
 getLocation();
 
 //########### End of Country Code #############//
@@ -115,10 +117,11 @@ async function worldData() {
         prefix: '+'
     };
 
-    
+
     confirmedGlobal.innerHTML = worldStats.cases;
     var confirmedAnim = new countUp.CountUp(confirmedGlobal, worldStats.cases);
     confirmedAnim.start();
+    console.log(`This is the Global Case: ${worldStats.cases}`);
 
     newConfirmedGlobal.innerHTML = worldStats.newCases;
     var newConfirmedAnim = new countUp.CountUp(newConfirmedGlobal, worldStats.newCases, options);
@@ -155,7 +158,7 @@ async function worldData() {
     let rorCircle = document.getElementById('circle-global');
 
     let ror = Math.ceil((worldStats.recovered / worldStats.cases) * 100);
-    console.log(ror +' trust me this number exist in reality');
+    console.log(`This is the Global Ratio of Recovery: ${ror}%`);
 
     rorValue.innerHTML = ror + "%";
     rorCircle.style.strokeDashoffset = `calc(400 - (400 * ${ror}) / 100)`;
@@ -217,6 +220,7 @@ async function countryData() {
     confirmedCountry.innerHTML = countryStats.cases;
     var confirmedAnim = new countUp.CountUp(confirmedCountry, countryStats.cases);
     confirmedAnim.start();
+    console.log(`This is the ${userCountry}'s Case: ${countryStats.cases}`);
 
     newConfirmedCountry.innerHTML = +countryStats.newCases;
     var newConfirmedAnim = new countUp.CountUp(newConfirmedCountry, countryStats.newCases, options);
@@ -254,6 +258,7 @@ async function countryData() {
 
 
     let ror = Math.ceil((countryStats.recovered / countryStats.cases) * 100);
+    console.log(`This is the ${userCountry}'s Ratio of Recovery: ${ror}%`);
 
     rorHeading.innerHTML = `Ratio of recovery (${userCountry})`;
     rorValue.innerHTML = ror + "%";
@@ -327,6 +332,8 @@ function fetchCountry(country) {
         confirmedCountry.innerHTML = countryStats.cases;
         var confirmedAnim = new countUp.CountUp(confirmedCountry, countryStats.cases);
         confirmedAnim.start();
+        console.log(`This is the ${userCountry}'s Case: ${countryStats.cases}`);
+
 
         newConfirmedCountry.innerHTML = +countryStats.newCases;
         var newConfirmedAnim = new countUp.CountUp(newConfirmedCountry, countryStats.newCases, options);
@@ -363,6 +370,9 @@ function fetchCountry(country) {
         let rorHeading = document.getElementById('heading-ror-country');
 
         let ror = Math.ceil((countryStats.recovered / countryStats.cases) * 100);
+
+        console.log(`This is the ${userCountry}'s Ratio of Recovery: ${ror}%`);
+
 
         rorHeading.innerHTML = `Ratio of recovery (${userCountry})`;
         rorValue.innerHTML = ror + "%";

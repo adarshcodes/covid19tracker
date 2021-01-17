@@ -64,6 +64,8 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 body {
@@ -1305,6 +1307,8 @@ h5 {
 }
 
 .stats-cards__cards {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -1455,10 +1459,14 @@ h5 {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: -3rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .card-data {
   font-size: 2.5rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 @media screen and (max-width: 450px) {
@@ -1474,6 +1482,8 @@ h5 {
           animation: super-pulse .8s linear infinite;
   -webkit-transition: all .5s;
   transition: all .5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .heading-population,
@@ -1540,6 +1550,8 @@ h5 {
 }
 
 .heading-ror {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   color: #28a745;
 }
 
