@@ -2208,11 +2208,18 @@ h5 {
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
+  position: relative;
 }
 
 .social:hover {
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.social:hover::after {
+  opacity: 1;
 }
 
 .linkedin {
