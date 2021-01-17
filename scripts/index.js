@@ -60,7 +60,7 @@ const newCriticalCountry = document.getElementById('country-critical-new');
 
 let userCountry;
 
-const geoApi = 'https://api.ipdata.co/?api-key=test';
+const geoApi = 'https://api.ipdata.co/?api-key=9227eec46ac82e07ca7fd8a06d4d4a0b453336c6579b0318fad86f48';
 
 async function getLocation() {
     const res = await fetch(geoApi);
@@ -71,8 +71,6 @@ async function getLocation() {
         userCountry = 'USA';
     }
 }
-
-console.log(`This is the user GeoLocation: ${userCountry}`);
 getLocation();
 
 //########### End of Country Code #############//
@@ -88,7 +86,6 @@ async function getCovidData() {
 
 //############### World Data on Startup ###############//
 async function worldData() {
-
     const response = await getCovidData();
     let worldCases = 0;
     let newWorldCases = 0;
@@ -169,6 +166,7 @@ async function worldData() {
 
 //############# Country Data Based on IP-Address ################//
 async function countryData() {
+
     const response = await getCovidData();
 
     let countryPopulation = 0;
@@ -186,6 +184,7 @@ async function countryData() {
     for (const data of response) {
 
         if (data.country == userCountry) {
+
             countryStats = {
                 population: countryPopulation = data.population,
                 test: countryTest = data.tests,

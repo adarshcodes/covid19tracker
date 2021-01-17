@@ -70,6 +70,7 @@ html {
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
 }
 
 body .container {
@@ -2107,7 +2108,6 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
   padding: 0 4rem;
 }
 
