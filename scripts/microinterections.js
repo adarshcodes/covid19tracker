@@ -120,3 +120,16 @@ window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
 // ############ End Prevention Timeline ##############//
+
+// ############ Copyright year   ############## //
+
+let date = new Date();
+let year = date.getFullYear();
+
+const copyYearNav = document.querySelector('.copy-year-nav');
+const copyYear = document.querySelector('.copy-year');
+
+
+copyYear.textContent = year;
+copyYearNav.textContent = year;
+
