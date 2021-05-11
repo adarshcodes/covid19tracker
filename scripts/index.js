@@ -78,6 +78,9 @@ getLocation();
 //############## API URL ##############//
 const apiURL = 'https://corona.lmao.ninja/v2/countries/';
 
+// https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.json
+
+
 async function getCovidData() {
     const apiResponse = await fetch(apiURL);
     const data = await apiResponse.json();
@@ -154,7 +157,8 @@ async function worldData() {
     let rorValue = document.querySelector('.ror-value-global');
     let rorCircle = document.getElementById('circle-global');
 
-    let ror = Math.ceil((worldStats.recovered / worldStats.cases) * 100);
+    let ror = ((worldStats.recovered / worldStats.cases) * 100);
+    ror = ror.toFixed(2);
     console.log(`This is the Global Ratio of Recovery: ${ror}%`);
 
     rorValue.innerHTML = ror + "%";
@@ -256,7 +260,9 @@ async function countryData() {
     let rorHeading = document.getElementById('heading-ror-country');
 
 
-    let ror = Math.ceil((countryStats.recovered / countryStats.cases) * 100);
+    let ror = ((countryStats.recovered / countryStats.cases) * 100);
+
+     ror = ror.toFixed(2);
     console.log(`This is the ${userCountry}'s Ratio of Recovery: ${ror}%`);
 
     rorHeading.innerHTML = `Ratio of recovery (${userCountry})`;
