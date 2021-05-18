@@ -29,7 +29,8 @@
 .contagion-card {
     width: 30%;
     height: 35rem;
-    box-shadow: 0 3rem 4rem rgba(0, 0, 0, .2);
+    // box-shadow: 0 3rem 4rem rgba(0, 0, 0, .2);
+    box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
     transition: all .5s;
     overflow: hidden;
     position: relative;
