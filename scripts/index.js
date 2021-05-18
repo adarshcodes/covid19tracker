@@ -430,8 +430,9 @@ function fetchCountry(country) {
 		let rorCircle = document.getElementById("circle-country");
 		let rorHeading = document.getElementById("heading-ror-country");
 
-		let ror = Math.ceil((countryStats.recovered / countryStats.cases) * 100);
+		let ror = (countryStats.recovered / countryStats.cases) * 100;
 
+		ror = ror.toFixed(2);
 		console.log(`This is the ${userCountry}'s Ratio of Recovery: ${ror}%`);
 
 		rorHeading.innerHTML = `Ratio of recovery (${userCountry})`;
