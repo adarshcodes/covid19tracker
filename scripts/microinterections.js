@@ -132,4 +132,3 @@ const copyYear = document.querySelector('.copy-year');
 
 copyYear.textContent = year;
 copyYearNav.textContent = year;
-
