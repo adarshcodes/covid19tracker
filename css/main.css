@@ -279,8 +279,8 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -7px 0px 30px 2px;
-          box-shadow: rgba(0, 0, 0, 0.1) -7px 0px 30px 2px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
 }
 
 @media screen and (max-width: 650px) {
@@ -350,8 +350,8 @@ h5 {
   width: 10rem;
   text-align: center;
   background: #fff;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
   color: rgba(61, 61, 61, 0.7);
   font-size: 1.5rem;
   font-weight: bold;
@@ -379,8 +379,8 @@ h5 {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #fff;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
   position: absolute;
   bottom: 11px;
   left: -8px;
@@ -501,8 +501,8 @@ h5 {
   -webkit-transition: left 0.8s cubic-bezier(1, 0, 0, 1);
   transition: left 0.8s cubic-bezier(1, 0, 0, 1);
   padding-top: 3rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
 }
 
 @media screen and (max-width: 650px) {
@@ -718,8 +718,8 @@ h5 {
   color: #6c757d;
   background: #fff;
   border: 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
   border-radius: .5rem;
   outline: none;
   padding: 1rem 1rem 1rem 6rem;
@@ -785,8 +785,8 @@ h5 {
   padding: 3rem 3rem 1rem 2rem;
   width: 50rem;
   height: 20rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
   border-radius: .5rem;
   overflow-y: scroll;
 }
@@ -1053,8 +1053,8 @@ h5 {
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
 }
 
 @media screen and (max-width: 400px) {
@@ -1119,8 +1119,8 @@ h5 {
   z-index: 2;
   background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
   border-radius: 50%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
 }
 
 .section-prevention ul li div {
@@ -1129,8 +1129,8 @@ h5 {
   width: 400px;
   padding: 20px;
   background: #fff;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1331,8 +1331,8 @@ h5 {
   background-color: #fff;
   width: 20rem;
   height: 25rem;
-  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(60, 127, 239, 0.05);
-          box-shadow: 0 0.5rem 2.5rem rgba(60, 127, 239, 0.05);
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(60, 127, 239, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(60, 127, 239, 0.1);
   margin: 3rem 1rem 3rem 1rem;
   background-size: 10rem 15rem;
   background-position: 50% 100%;
@@ -1580,8 +1580,8 @@ h5 {
   max-width: 800px;
   margin: 10rem auto;
   background: #fff;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
   padding: 25px;
   border-radius: 25px;
   height: 400px;
@@ -1978,8 +1978,8 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   border-radius: .5rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  -webkit-box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+          box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
 }
 
 .section-treatment__card__img {

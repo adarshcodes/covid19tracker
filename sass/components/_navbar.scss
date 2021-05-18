@@ -13,7 +13,8 @@
     z-index: 100;
     // box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
     // 0 15px 40px rgba(166, 173, 201, .2);
-    box-shadow: rgba(0, 0, 0, 0.1) -7px 0px 30px 2px;
+    // box-shadow: rgba(0, 0, 0, 0.1) -7px 0px 30px 2px;
+    box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
 
 
     @media screen and (max-width: 650px) {
@@ -62,7 +63,8 @@
             background: #fff;
             // box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
             //     0 15px 40px rgba(166, 173, 201, .2);
-            box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+            // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+            box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
             color: rgba(#3d3d3d, .7);
             ;
             font-size: 1.5rem;
@@ -90,7 +92,8 @@
                 border-top: 5px solid #fff;
                 // box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
                 //     0 15px 40px rgba(166, 173, 201, .2);
-                box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+                // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+                box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
                 position: absolute;
                 bottom: 11px;
                 left: -8px;
@@ -192,7 +195,9 @@
     transition: left .8s cubic-bezier(1, 0, 0, 1);
     padding-top: 3rem;
     // box-shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    // box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
+    box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
 
     @media screen and (max-width: 650px) {
         margin-top: 6.5rem;

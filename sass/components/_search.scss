@@ -26,7 +26,8 @@
         border: 0;
         // box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
         //     0 15px 40px rgba(166, 173, 201, .2);
-        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+        // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+        box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
         border-radius: .5rem;
         outline: none;
         padding: 1rem 1rem 1rem 6rem;
@@ -70,7 +71,8 @@
 
     // box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
     //     0 15px 40px rgba(166, 173, 201, .2);
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    box-shadow: 0 0.5rem 2.5rem rgba(26, 39, 61, 0.1);
     border-radius: .5rem;
     overflow-y: scroll;
 
