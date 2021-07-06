@@ -27,7 +27,7 @@
 ],
 
 "start_url": "index.html",
-"background_image": "linear-gradient(to right top, #dff86e, #e6e958, #edd944, #f3c932, #f9b823, #fbab17, #fd9e0d, #ff9007, #ff8400, #ff7700, #ff6800, #ff5900",
+"background_color": "#eee",
 "display": "standalone",
 "theme_color": "#fff"
 }
