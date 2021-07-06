@@ -21,6 +21,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
+
+        <meta name="theme-color" content="#4dbaa8">
+        <link rel="manifest" href="manifest.json">
+
+        <script>
+            //service worker supported by browser
+
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js');
+            };
+        </script>
 </head>
 
 <body>
