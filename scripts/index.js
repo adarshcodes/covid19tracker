@@ -72,6 +72,8 @@ async function getLocation() {
 }
 getLocation();
 
+console.log(userCountry);
+
 //########### End of Country Code #############//
 
 //############## API URL ##############//
